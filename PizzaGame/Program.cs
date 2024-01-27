@@ -1,11 +1,14 @@
-using BlackCoat;
 using SFML.Window;
+using BlackCoat;
 
 namespace PizzaGame
 {
     internal static class Program
     {
         public const string TITLE = "Pizza Topo";
+        public static int MUSIC_VOLUME = 50;
+        public static int SFX_VOLUME = 50;
+
         static void Main()
         {
 #if !DEBUG
@@ -16,6 +19,8 @@ namespace PizzaGame
             };
             var device = Device.Create(launcher, TITLE);
             if (device == null) return;
+            MUSIC_VOLUME = launcher.MusicVolume;
+            SFX_VOLUME = launcher.EffectVolume;
 #endif
 
 #if DEBUG

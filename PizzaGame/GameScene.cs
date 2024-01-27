@@ -9,6 +9,7 @@ using BlackCoat.Entities;
 using BlackCoat.Animation;
 using BlackCoat.Entities.Shapes;
 using BlackCoat.Entities.Animation;
+using SFML.Audio;
 
 namespace PizzaGame
 {
@@ -32,6 +33,9 @@ namespace PizzaGame
         public float YMod { get; set; } = 1f;
         public float MapScale { get; set; } = 0.45f;
         public Vector2f MapOffset { get; set; } = new Vector2f(150, 0);
+
+        private Music _BgMusic;
+
         public View ViewTest { get; private set; }
 
         public GameScene(Core core) : base(core, "PizzaTime", "Assets")
@@ -39,6 +43,14 @@ namespace PizzaGame
 
         protected override bool Load()
         {
+            // Music
+            _BgMusic = MusicLoader.Load("msc_ingame_loop");
+            _BgMusic.Volume = Program.MUSIC_VOLUME;
+            _BgMusic.Loop = true;
+#if DEBUG
+            _BgMusic.Play();
+#endif
+
             //ViewTest   
             ViewTest = new View();
             ViewTest.Size = _Core.DeviceSize;
@@ -95,13 +107,13 @@ namespace PizzaGame
             }
 
             var test = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(40, 43).
-                                                            Select(i => _SalamiLoader.Load("00" + i)).
+                                                            Select(i => _SalamiLoader.Load(i.ToString("D4"))).
                                                             ToArray());
             var test2 = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 60).
-                                                            Select(i => _OlivLoader.Load("00" + i)).
+                                                            Select(i => _OlivLoader.Load(i.ToString("D4"))).
                                                             ToArray());
             var test3 = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).
-                                                            Select(i => _TomatoLoader.Load("00" + i)).
+                                                            Select(i => _TomatoLoader.Load(i.ToString("D4"))).
                                                             ToArray());
 
             test.Position = _Core.DeviceSize / 2;
