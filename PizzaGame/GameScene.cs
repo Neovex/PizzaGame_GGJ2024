@@ -4,6 +4,9 @@ using SFML.System;
 using SFML.Graphics;
 using BlackCoat;
 using BlackCoat.Entities;
+using System.Windows.Forms;
+using BlackCoat.Entities.Shapes;
+using System.Diagnostics;
 
 namespace PizzaGame
 {
@@ -15,7 +18,6 @@ namespace PizzaGame
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
         private Graphic[,] _Grid;
-        private TextItem _DebugTxt;
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
@@ -29,25 +31,30 @@ namespace PizzaGame
 
         protected override bool Load()
         {
-            _Core.ClearColor = new Color(75, 75, 75);
+            // Background
+            var part = 0.60f;
+            Layer_Background.Add(
+                new Rectangle(_Core, new Vector2f(_Core.DeviceSize.X, _Core.DeviceSize.Y * part), new Color(0xb05a1300))
+                { Position = new Vector2f(0, _Core.DeviceSize.Y * (1 - part)) });
+            Layer_Background.Add(
+                new Rectangle(_Core, new Vector2f(_Core.DeviceSize.X * 0.2f, _Core.DeviceSize.Y * (1 - part)), Color.Cyan)
+                { Position = new Vector2f(_Core.DeviceSize.X * 0.4f, 0) });
 
-            MapOffset = new Vector2f(_Core.DeviceSize.X / 2, 50);
+
+            _GridSize = new Vector2u(5, 5);
             LoadGrid(Layer_Game);
+            UpdateGrid();
 
             Input.KeyPressed += k => UpdateGrid();
+            Input.MouseButtonPressed += m => Trace.WriteLine(Input.MousePosition);
 
-            _DebugTxt = new TextItem(_Core);
-            _DebugTxt.Position = new Vector2f(10, 150);
-            Layer_Overlay.Add(_DebugTxt);
-
-            OpenInspector();
+            //OpenInspector();
             return true;
         }
 
         protected override void Update(float deltaT)
         {
             var index = PosToGrid(Input.MousePosition - MapOffset);
-            _DebugTxt.Text = index.ToString();
             foreach (var g in _Grid) g.Alpha = 1;
             if (index.X < 0) index.X = 0;
             if (index.Y < 0) index.Y = 0;
@@ -58,14 +65,13 @@ namespace PizzaGame
 
         private void LoadGrid(Container parent)
         {
-            _GridSize = new Vector2u(8, 5);
             var textures = Enumerable.Range(0, 9).Select(i => TextureLoader.Load(i.ToString())).ToArray();
             Texture GetTexFor(int x, int y)
             {
                 if (x == 0)
                 {
                     if (y == 0) return textures[1];
-                    if (y == _GridSize.Y-1) return textures[6];
+                    if (y == _GridSize.Y - 1) return textures[6];
                     return textures[4];
                 }
 
@@ -92,17 +98,24 @@ namespace PizzaGame
                     _Grid[x, y] = tile;
                 }
             }
-            UpdateGrid();
         }
 
 
         private void UpdateGrid()
         {
+            var min = GridToPos(0, (int)_GridSize.Y);
+            var max = GridToPos((int)_GridSize.X, 0);
+            var width = max.X - min.X;
+            min = GridToPos(0, 0);
+            max = GridToPos((int)_GridSize.X, (int)_GridSize.Y);
+            var height = max.Y - min.Y;
+            MapOffset = new Vector2f(_Core.DeviceSize.X * 0.5f - _TileSize.X * MapScale / 2, _Core.DeviceSize.Y * 0.75f - height / 2);
+
             for (int x = 0; x < _GridSize.X; x++)
             {
                 for (int y = 0; y < _GridSize.Y; y++)
                 {
-                    _Grid[x, y].Position = GridToPos(x, y);
+                    _Grid[x, y].Position = GridToPos(x, y) + MapOffset;
                     _Grid[x, y].Scale = new Vector2f(MapScale, MapScale);
                 }
             }
@@ -111,7 +124,7 @@ namespace PizzaGame
 
         private Vector2i PosToGrid(Vector2f pos)
         {
-            pos -= new Vector2f(_TileSize.X*XMod,0) * MapScale;
+            pos -= new Vector2f(_TileSize.X * XMod, 0) * MapScale;
             var size = _TileSize * MapScale;
 
             var a = _I.X * XMod * size.X;
@@ -139,8 +152,8 @@ namespace PizzaGame
             var d = _J.Y * YMod * size.Y;
 
             return new(
-                   x * a + y * b + MapOffset.X,
-                   x * c + y * d + MapOffset.Y);
+                   x * a + y * b,
+                   x * c + y * d);
         }
 
         protected override void Destroy() { }
