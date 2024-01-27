@@ -22,6 +22,119 @@
     <None Remove="Assets\m1.png" />
     <None Remove="Assets\m2.png" />
     <None Remove="Assets\m3.png" />
+    <None Remove="Assets\msc_ingame_loop.ogg" />
+    <None Remove="Assets\msc_menu_loop.ogg" />
+    <None Remove="Assets\Olive\0000.png" />
+    <None Remove="Assets\Olive\0001.png" />
+    <None Remove="Assets\Olive\0002.png" />
+    <None Remove="Assets\Olive\0003.png" />
+    <None Remove="Assets\Olive\0004.png" />
+    <None Remove="Assets\Olive\0005.png" />
+    <None Remove="Assets\Olive\0006.png" />
+    <None Remove="Assets\Olive\0007.png" />
+    <None Remove="Assets\Olive\0008.png" />
+    <None Remove="Assets\Olive\0009.png" />
+    <None Remove="Assets\Olive\0010.png" />
+    <None Remove="Assets\Olive\0011.png" />
+    <None Remove="Assets\Olive\0012.png" />
+    <None Remove="Assets\Olive\0013.png" />
+    <None Remove="Assets\Olive\0014.png" />
+    <None Remove="Assets\Olive\0015.png" />
+    <None Remove="Assets\Olive\0016.png" />
+    <None Remove="Assets\Olive\0017.png" />
+    <None Remove="Assets\Olive\0018.png" />
+    <None Remove="Assets\Olive\0019.png" />
+    <None Remove="Assets\Olive\0020.png" />
+    <None Remove="Assets\Olive\0021.png" />
+    <None Remove="Assets\Olive\0022.png" />
+    <None Remove="Assets\Olive\0023.png" />
+    <None Remove="Assets\Olive\0024.png" />
+    <None Remove="Assets\Olive\0025.png" />
+    <None Remove="Assets\Olive\0026.png" />
+    <None Remove="Assets\Olive\0027.png" />
+    <None Remove="Assets\Olive\0028.png" />
+    <None Remove="Assets\Olive\0029.png" />
+    <None Remove="Assets\Olive\0030.png" />
+    <None Remove="Assets\Olive\0031.png" />
+    <None Remove="Assets\Olive\0032.png" />
+    <None Remove="Assets\Olive\0033.png" />
+    <None Remove="Assets\Olive\0034.png" />
+    <None Remove="Assets\Olive\0035.png" />
+    <None Remove="Assets\Olive\0036.png" />
+    <None Remove="Assets\Olive\0037.png" />
+    <None Remove="Assets\Olive\0038.png" />
+    <None Remove="Assets\Olive\0039.png" />
+    <None Remove="Assets\Olive\0040.png" />
+    <None Remove="Assets\Olive\0041.png" />
+    <None Remove="Assets\Olive\0042.png" />
+    <None Remove="Assets\Olive\0043.png" />
+    <None Remove="Assets\Olive\0044.png" />
+    <None Remove="Assets\Olive\0045.png" />
+    <None Remove="Assets\Olive\0046.png" />
+    <None Remove="Assets\Olive\0047.png" />
+    <None Remove="Assets\Olive\0048.png" />
+    <None Remove="Assets\Olive\0049.png" />
+    <None Remove="Assets\Olive\0050.png" />
+    <None Remove="Assets\Olive\0051.png" />
+    <None Remove="Assets\Olive\0052.png" />
+    <None Remove="Assets\Olive\0053.png" />
+    <None Remove="Assets\Olive\0054.png" />
+    <None Remove="Assets\Olive\0055.png" />
+    <None Remove="Assets\Olive\0056.png" />
+    <None Remove="Assets\Olive\0057.png" />
+    <None Remove="Assets\Olive\0058.png" />
+    <None Remove="Assets\Olive\0059.png" />
+    <None Remove="Assets\Salami\0040.png" />
+    <None Remove="Assets\Salami\0041.png" />
+    <None Remove="Assets\Salami\0042.png" />
+    <None Remove="Assets\Salami\0043.png" />
+    <None Remove="Assets\Salami\0044.png" />
+    <None Remove="Assets\Salami\0045.png" />
+    <None Remove="Assets\Salami\0046.png" />
+    <None Remove="Assets\Salami\0047.png" />
+    <None Remove="Assets\Salami\0048.png" />
+    <None Remove="Assets\Salami\0049.png" />
+    <None Remove="Assets\Salami\0050.png" />
+    <None Remove="Assets\Salami\0051.png" />
+    <None Remove="Assets\Salami\0052.png" />
+    <None Remove="Assets\Salami\0053.png" />
+    <None Remove="Assets\Salami\0054.png" />
+    <None Remove="Assets\Salami\0055.png" />
+    <None Remove="Assets\Salami\0056.png" />
+    <None Remove="Assets\Salami\0057.png" />
+    <None Remove="Assets\Salami\0058.png" />
+    <None Remove="Assets\Salami\0059.png" />
+    <None Remove="Assets\Salami\0060.png" />
+    <None Remove="Assets\Salami\0061.png" />
+    <None Remove="Assets\Salami\0062.png" />
+    <None Remove="Assets\Salami\0063.png" />
+    <None Remove="Assets\Salami\0064.png" />
+    <None Remove="Assets\Salami\0065.png" />
+    <None Remove="Assets\Salami\0066.png" />
+    <None Remove="Assets\Salami\0067.png" />
+    <None Remove="Assets\Salami\0068.png" />
+    <None Remove="Assets\Salami\0069.png" />
+    <None Remove="Assets\Salami\0070.png" />
+    <None Remove="Assets\Salami\0071.png" />
+    <None Remove="Assets\Salami\0072.png" />
+    <None Remove="Assets\Salami\0073.png" />
+    <None Remove="Assets\Salami\0074.png" />
+    <None Remove="Assets\Salami\0075.png" />
+    <None Remove="Assets\Salami\0076.png" />
+    <None Remove="Assets\Salami\0077.png" />
+    <None Remove="Assets\Salami\0078.png" />
+    <None Remove="Assets\Salami\0079.png" />
+    <None Remove="Assets\Salami\0080.png" />
+    <None Remove="Assets\Salami\0081.png" />
+    <None Remove="Assets\Salami\0082.png" />
+    <None Remove="Assets\sfx_button_backward.wav" />
+    <None Remove="Assets\sfx_button_forward.wav" />
+    <None Remove="Assets\sfx_button_hover.wav" />
+    <None Remove="Assets\sfx_food_hiss.wav" />
+    <None Remove="Assets\sfx_food_impact.wav" />
+    <None Remove="Assets\sfx_mouse_eat-001.wav" />
+    <None Remove="Assets\sfx_mouse_eat-002.wav" />
+    <None Remove="Assets\sfx_mouse_eat-003.wav" />
     <None Remove="Assets\Tile1.png" />
     <None Remove="Assets\Tile2.png" />
     <None Remove="Assets\Tile3.png" />
@@ -31,6 +144,57 @@
     <None Remove="Assets\Tile7.png" />
     <None Remove="Assets\Tile8.png" />
     <None Remove="Assets\Tile9.png" />
+    <None Remove="Assets\Tomate\0000.png" />
+    <None Remove="Assets\Tomate\0001.png" />
+    <None Remove="Assets\Tomate\0002.png" />
+    <None Remove="Assets\Tomate\0003.png" />
+    <None Remove="Assets\Tomate\0004.png" />
+    <None Remove="Assets\Tomate\0005.png" />
+    <None Remove="Assets\Tomate\0006.png" />
+    <None Remove="Assets\Tomate\0007.png" />
+    <None Remove="Assets\Tomate\0008.png" />
+    <None Remove="Assets\Tomate\0009.png" />
+    <None Remove="Assets\Tomate\0010.png" />
+    <None Remove="Assets\Tomate\0011.png" />
+    <None Remove="Assets\Tomate\0012.png" />
+    <None Remove="Assets\Tomate\0013.png" />
+    <None Remove="Assets\Tomate\0014.png" />
+    <None Remove="Assets\Tomate\0015.png" />
+    <None Remove="Assets\Tomate\0016.png" />
+    <None Remove="Assets\Tomate\0017.png" />
+    <None Remove="Assets\Tomate\0018.png" />
+    <None Remove="Assets\Tomate\0019.png" />
+    <None Remove="Assets\Tomate\0020.png" />
+    <None Remove="Assets\Tomate\0021.png" />
+    <None Remove="Assets\Tomate\0022.png" />
+    <None Remove="Assets\Tomate\0023.png" />
+    <None Remove="Assets\Tomate\0024.png" />
+    <None Remove="Assets\Tomate\0025.png" />
+    <None Remove="Assets\Tomate\0026.png" />
+    <None Remove="Assets\Tomate\0027.png" />
+    <None Remove="Assets\Tomate\0028.png" />
+    <None Remove="Assets\Tomate\0029.png" />
+    <None Remove="Assets\Tomate\0030.png" />
+    <None Remove="Assets\Tomate\0031.png" />
+    <None Remove="Assets\Tomate\0032.png" />
+    <None Remove="Assets\Tomate\0033.png" />
+    <None Remove="Assets\Tomate\0034.png" />
+    <None Remove="Assets\Tomate\0035.png" />
+    <None Remove="Assets\Tomate\0036.png" />
+    <None Remove="Assets\Tomate\0037.png" />
+    <None Remove="Assets\Tomate\0038.png" />
+    <None Remove="Assets\Tomate\0039.png" />
+    <None Remove="Assets\Tomate\0040.png" />
+    <None Remove="Assets\Tomate\0041.png" />
+    <None Remove="Assets\Tomate\0042.png" />
+    <None Remove="Assets\Tomate\0043.png" />
+    <None Remove="Assets\Tomate\0044.png" />
+    <None Remove="Assets\Tomate\0045.png" />
+    <None Remove="Assets\Tomate\0046.png" />
+    <None Remove="Assets\Tomate\0047.png" />
+    <None Remove="Assets\Tomate\0048.png" />
+    <None Remove="Assets\Tomate\0049.png" />
+    <None Remove="Assets\Tomate\0050.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -73,10 +237,505 @@
     <Content Include="Assets\m3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\msc_ingame_loop.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\msc_menu_loop.ogg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0060.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0061.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0062.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0063.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0064.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0065.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0066.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0067.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0068.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0069.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0070.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0071.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0072.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0073.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0074.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0075.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0076.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0077.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0078.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0079.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0080.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0081.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Salami\0082.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_button_backward.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_button_forward.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_button_hover.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_food_hiss.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_food_impact.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_mouse_eat-001.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_mouse_eat-002.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sfx_mouse_eat-003.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tomate\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SFML.Net" Version="2.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Olive\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Olive\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

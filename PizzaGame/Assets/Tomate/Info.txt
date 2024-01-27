@@ -1,0 +1,2 @@
+Frame 0000 - 0027 : Fallanimation (nicht loop)
+Frame 0028 - 0050 : Aufklatschanimation (nicht loop)

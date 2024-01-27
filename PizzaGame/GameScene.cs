@@ -24,6 +24,9 @@ namespace PizzaGame
         private float _Speed = 100;
         private FloatRect _GridBounds;
         private TextItem _DebugTxt;
+        private TextureLoader _SalamiLoader;
+        private TextureLoader _OlivLoader;
+        private TextureLoader _TomatoLoader;
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
@@ -66,6 +69,12 @@ namespace PizzaGame
             Layer_Game.Add(_Mouse);
 
             // Pickups
+            _SalamiLoader = new TextureLoader("Assets\\Salami");
+            _OlivLoader = new TextureLoader("Assets\\Olive");
+            _TomatoLoader = new TextureLoader("Assets\\Tomate");
+
+
+
             _Mouse.Visible = false;
             var bounds = new IntRect(default, _GridSize.ToVector2i());
             for (int i = 0; i < 500; i++)
@@ -84,6 +93,23 @@ namespace PizzaGame
                     Position = pos+MapOffset
                 });;
             }
+
+            var test = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(40, 43).
+                                                            Select(i => _SalamiLoader.Load("00" + i)).
+                                                            ToArray());
+            var test2 = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 60).
+                                                            Select(i => _OlivLoader.Load("00" + i)).
+                                                            ToArray());
+            var test3 = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).
+                                                            Select(i => _TomatoLoader.Load("00" + i)).
+                                                            ToArray());
+
+            test.Position = _Core.DeviceSize / 2;
+            Layer_Game.Add(test);
+            test2.Position = test.Position + new Vector2f(100, 0);
+            Layer_Game.Add(test2);
+            test3.Position = test2.Position + new Vector2f(100, 0);
+            Layer_Game.Add(test3);
 
             // Temp
             Input.KeyPressed += k => UpdateGrid();
