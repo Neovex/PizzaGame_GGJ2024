@@ -9,7 +9,54 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\tile.png" />
+    <None Remove="Assets\0.png" />
+    <None Remove="Assets\1.png" />
+    <None Remove="Assets\2.png" />
+    <None Remove="Assets\3.png" />
+    <None Remove="Assets\4.png" />
+    <None Remove="Assets\5.png" />
+    <None Remove="Assets\6.png" />
+    <None Remove="Assets\7.png" />
+    <None Remove="Assets\8.png" />
+    <None Remove="Assets\Tile1.png" />
+    <None Remove="Assets\Tile2.png" />
+    <None Remove="Assets\Tile3.png" />
+    <None Remove="Assets\Tile4.png" />
+    <None Remove="Assets\Tile5.png" />
+    <None Remove="Assets\Tile6.png" />
+    <None Remove="Assets\Tile7.png" />
+    <None Remove="Assets\Tile8.png" />
+    <None Remove="Assets\Tile9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -20,12 +67,6 @@
     <Reference Include="BlackCoat">
       <HintPath>..\..\GGJ Source\BackToTheSquareRoot\lib\BlackCoat.dll</HintPath>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Assets\tile.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>
