@@ -18,6 +18,10 @@
     <None Remove="Assets\6.png" />
     <None Remove="Assets\7.png" />
     <None Remove="Assets\8.png" />
+    <None Remove="Assets\m0.png" />
+    <None Remove="Assets\m1.png" />
+    <None Remove="Assets\m2.png" />
+    <None Remove="Assets\m3.png" />
     <None Remove="Assets\Tile1.png" />
     <None Remove="Assets\Tile2.png" />
     <None Remove="Assets\Tile3.png" />
@@ -57,6 +61,18 @@
     <Content Include="Assets\8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\m0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -64,9 +80,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="BlackCoat">
-      <HintPath>..\..\GGJ Source\BackToTheSquareRoot\lib\BlackCoat.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\GGJ Source\BlackCoat\src\BlackCoat.csproj" />
   </ItemGroup>
 
 </Project>

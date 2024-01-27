@@ -4,9 +4,10 @@ using SFML.System;
 using SFML.Graphics;
 using BlackCoat;
 using BlackCoat.Entities;
-using System.Windows.Forms;
+using BlackCoat.Animation;
 using BlackCoat.Entities.Shapes;
 using System.Diagnostics;
+using BlackCoat.Entities.Animation;
 
 namespace PizzaGame
 {
@@ -18,16 +19,16 @@ namespace PizzaGame
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
         private Graphic[,] _Grid;
+        private FrameAnimation _Mouse;
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
-        public float MapScale { get; set; } = 0.15f;
+        public float MapScale { get; set; } = 0.35f;
         public Vector2f MapOffset { get; set; } = new Vector2f(150, 0);
 
+
         public GameScene(Core core) : base(core, "PizzaTime", "Assets")
-        {
-            core.Debug = true;
-        }
+        { }
 
         protected override bool Load()
         {
@@ -40,11 +41,20 @@ namespace PizzaGame
                 new Rectangle(_Core, new Vector2f(_Core.DeviceSize.X * 0.2f, _Core.DeviceSize.Y * (1 - part)), Color.Cyan)
                 { Position = new Vector2f(_Core.DeviceSize.X * 0.4f, 0) });
 
-
+            // Game Field
             _GridSize = new Vector2u(5, 5);
             LoadGrid(Layer_Game);
             UpdateGrid();
 
+            // Player
+            _Mouse = new FrameAnimation(_Core, .1f, Enumerable.Range(0, 4).Select(i => TextureLoader.Load("m" + i)).ToArray());
+            _Mouse.Paused = true;
+            _Mouse.Origin = TextureLoader.Load("m0").Size.ToVector2f() / 2;
+            _Mouse.Position = GridToPos(2, 2) + MapOffset;
+            _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
+            Layer_Game.Add(_Mouse);
+
+            // Temp
             Input.KeyPressed += k => UpdateGrid();
             Input.MouseButtonPressed += m => Trace.WriteLine(Input.MousePosition);
 
