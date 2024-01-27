@@ -10,6 +10,7 @@ using BlackCoat.Animation;
 using BlackCoat.Entities.Shapes;
 using BlackCoat.Entities.Animation;
 using SFML.Audio;
+using BlackCoat.AssetHandling;
 
 namespace PizzaGame
 {
@@ -35,7 +36,8 @@ namespace PizzaGame
         public Vector2f MapOffset { get; set; } = new Vector2f(150, 0);
 
         private Music _BgMusic;
-
+        private SfxManager _SfxMan;
+        private string[] _SfxFiles = new[] { "sfx_button_backward", "sfx_button_forward", "sfx_button_hover", "sfx_food_hiss", "sfx_food_impact", "sfx_mouse_eat-001", "sfx_mouse_eat-002", "sfx_mouse_eat-003" };
         public View ViewTest { get; private set; }
 
         public GameScene(Core core) : base(core, "PizzaTime", "Assets")
@@ -50,6 +52,12 @@ namespace PizzaGame
 #if DEBUG
             _BgMusic.Play();
 #endif
+
+            // SFX
+            _SfxMan = new SfxManager(SfxLoader, ()=> Program.SFX_VOLUME);
+            foreach (var sfxFile in _SfxFiles) _SfxMan.AddToLibrary(sfxFile, 2);
+            //_Core.AnimationManager.Wait(4, () => _SfxMan.Play(_SfxFiles[3]));
+
 
             //ViewTest   
             ViewTest = new View();
