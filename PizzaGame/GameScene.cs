@@ -1,25 +1,27 @@
 ﻿using System;
 using System.Linq;
+using System.Diagnostics;
 using SFML.System;
+using SFML.Window;
 using SFML.Graphics;
 using BlackCoat;
 using BlackCoat.Entities;
 using BlackCoat.Animation;
 using BlackCoat.Entities.Shapes;
-using System.Diagnostics;
 using BlackCoat.Entities.Animation;
 
 namespace PizzaGame
 {
     internal class GameScene : Scene
     {
-        //private static readonly Vector2f _TileSize = new Vector2f(480, 270);
         private static readonly Vector2f _TileSize = new Vector2f(464, 217);
         private Vector2u _GridSize;
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
-        private Graphic[,] _Grid;
+        private Graphic[,] _Grid = new Graphic[0, 0];
         private FrameAnimation _Mouse;
+        private Vector2f _Direction = new Vector2f();
+        private float _Speed = 100;
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
@@ -64,6 +66,11 @@ namespace PizzaGame
 
         protected override void Update(float deltaT)
         {
+            //Input
+            CheckInput();
+            _Mouse.Position = _Mouse.Position + _Direction * _Speed * deltaT;
+
+            // Debug
             var index = PosToGrid(Input.MousePosition - MapOffset);
             foreach (var g in _Grid) g.Alpha = 1;
             if (index.X < 0) index.X = 0;
@@ -71,6 +78,51 @@ namespace PizzaGame
             if (index.X >= _GridSize.X) index.X = (int)_GridSize.X - 1;
             if (index.Y >= _GridSize.Y) index.Y = (int)_GridSize.Y - 1;
             _Grid[index.X, index.Y].Alpha = 0.5f;
+        }
+
+        private void CheckInput()
+        {
+            if (Input.IsKeyDown(Keyboard.Key.W, Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Up, Keyboard.Key.Left))
+            {
+                _Direction = new Vector2f(-1, -1);
+                _Mouse.CurrentFrame = 0;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.W, Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Up, Keyboard.Key.Right))
+            {
+                _Direction = new Vector2f(1, -1);
+                _Mouse.CurrentFrame = 0;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.S, Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Down, Keyboard.Key.Left))
+            {
+                _Direction = new Vector2f(-1, 1);
+                _Mouse.CurrentFrame = 0;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.S, Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Down, Keyboard.Key.Right))
+            {
+                _Direction = new Vector2f(1, 1);
+                _Mouse.CurrentFrame = 0;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.W) || Input.IsKeyDown(Keyboard.Key.Up))
+            {
+                _Direction = new Vector2f(0, -1);
+                _Mouse.CurrentFrame = 1;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Left))
+            {
+                _Direction = new Vector2f(-1, 0);
+                _Mouse.CurrentFrame = 0;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.S) || Input.IsKeyDown(Keyboard.Key.Down))
+            {
+                _Direction = new Vector2f(0, 1);
+                _Mouse.CurrentFrame = 3;
+            }
+            else if (Input.IsKeyDown(Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Right))
+            {
+                _Direction = new Vector2f(1, 0);
+                _Mouse.CurrentFrame = 2;
+            }
+            else _Direction = default;
         }
 
         private void LoadGrid(Container parent)
