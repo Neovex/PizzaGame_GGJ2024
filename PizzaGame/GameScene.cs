@@ -22,6 +22,8 @@ namespace PizzaGame
         private FrameAnimation _Mouse;
         private Vector2f _Direction = new Vector2f();
         private float _Speed = 100;
+        private FloatRect _GridBounds;
+        private TextItem _DebugTxt;
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
@@ -63,9 +65,35 @@ namespace PizzaGame
             _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
             Layer_Game.Add(_Mouse);
 
+            // Pickups
+            _Mouse.Visible = false;
+            var bounds = new IntRect(default, _GridSize.ToVector2i());
+            for (int i = 0; i < 500; i++)
+            {
+                Vector2f pos;
+                Vector2i g;
+                do
+                {
+                    pos = _Core.Random.NextVector(_GridBounds) - MapOffset;
+                    g = PosToGrid(pos);
+                }
+                while (!bounds.Contains(g.X, g.Y));
+
+                Layer_Game.Add(new Rectangle(_Core, new(2, 2), Color.Black)
+                {
+                    Position = pos+MapOffset
+                });;
+            }
+
             // Temp
             Input.KeyPressed += k => UpdateGrid();
-            Input.MouseButtonPressed += m => Trace.WriteLine(Input.MousePosition);
+            Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition-MapOffset));
+
+            _DebugTxt = new TextItem(_Core)
+            {
+                Position = new Vector2f(20, 150)
+            };
+            Layer_Overlay.Add(_DebugTxt);
 
             //OpenInspector();
             return true;
@@ -79,6 +107,7 @@ namespace PizzaGame
 
             // Debug
             var index = PosToGrid(Input.MousePosition - MapOffset);
+            _DebugTxt.Text = index.ToString();
             foreach (var g in _Grid) g.Alpha = 1;
             if (index.X < 0) index.X = 0;
             if (index.Y < 0) index.Y = 0;
@@ -178,7 +207,11 @@ namespace PizzaGame
             min = GridToPos(0, 0);
             max = GridToPos((int)_GridSize.X, (int)_GridSize.Y);
             var height = max.Y - min.Y;
-            MapOffset = new Vector2f(_Core.DeviceSize.X * 0.5f - _TileSize.X * MapScale / 2, _Core.DeviceSize.Y * 0.75f - height / 2);
+            _GridBounds = new FloatRect(_Core.DeviceSize.X / 2 - width / 2,
+                                        _Core.DeviceSize.Y * 0.75f - height / 2,
+                                        width, height);
+            MapOffset = new Vector2f(_Core.DeviceSize.X / 2 - _TileSize.X * MapScale / 2, 
+                                     _Core.DeviceSize.Y * 0.75f - height / 2);
 
             for (int x = 0; x < _GridSize.X; x++)
             {
