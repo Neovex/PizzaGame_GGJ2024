@@ -26,6 +26,7 @@ namespace PizzaGame
         private float _Speed = 100;
         private FloatRect _GridBounds;
         private TextItem _DebugTxt;
+        private Polygon _GameField;
         private TextureLoader _SalamiLoader;
         private TextureLoader _OlivLoader;
         private TextureLoader _TomatoLoader;
@@ -49,7 +50,7 @@ namespace PizzaGame
             _BgMusic = MusicLoader.Load("msc_ingame_loop");
             _BgMusic.Volume = Program.MUSIC_VOLUME;
             _BgMusic.Loop = true;
-#if DEBUG
+#if !DEBUG
             _BgMusic.Play();
 #endif
 
@@ -87,6 +88,7 @@ namespace PizzaGame
             _Mouse.Position = GridToPos(2, 2) + MapOffset;
             _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
             Layer_Game.Add(_Mouse);
+            //Layer_Game.Add(_GameField);
 
             // Pickups
             _SalamiLoader = new TextureLoader("Assets\\Salami");
@@ -103,14 +105,13 @@ namespace PizzaGame
                 Vector2i g;
                 do
                 {
-                    pos = _Core.Random.NextVector(_GridBounds) - MapOffset;
-                    g = PosToGrid(pos);
+                    pos = _Core.Random.NextVector(_GridBounds);
                 }
-                while (!bounds.Contains(g.X, g.Y));
+                while (!_GameField.CollidesWith(pos));
 
                 Layer_Game.Add(new Rectangle(_Core, new(2, 2), Color.Black)
                 {
-                    Position = pos+MapOffset
+                    Position = pos
                 });;
             }
 
@@ -267,6 +268,14 @@ namespace PizzaGame
                     _Grid[x, y].Scale = new Vector2f(MapScale, MapScale);
                 }
             }
+
+            _GameField = new Polygon(_Core, new Vector2f[] {
+                    new(_GridBounds.Left + _GridBounds.Width / 2, _GridBounds.Top),
+                    new(_GridBounds.Left + _GridBounds.Width, _GridBounds.Top + _GridBounds.Height / 2),
+                    new(_GridBounds.Left + _GridBounds.Width  /2, _GridBounds.Top + _GridBounds.Height),
+                    new(_GridBounds.Left, _GridBounds.Top + _GridBounds.Height / 2),
+                }, null, Color.Magenta)
+            { OutlineThickness = 2 };
         }
 
 
