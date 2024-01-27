@@ -25,15 +25,22 @@ namespace PizzaGame
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
-        public float MapScale { get; set; } = 0.35f;
+        public float MapScale { get; set; } = 0.45f;
         public Vector2f MapOffset { get; set; } = new Vector2f(150, 0);
-
+        public View ViewTest { get; private set; }
 
         public GameScene(Core core) : base(core, "PizzaTime", "Assets")
         { }
 
         protected override bool Load()
         {
+            //ViewTest   
+            ViewTest = new View();
+            ViewTest.Size = _Core.DeviceSize;
+            ViewTest.Center = _Core.DeviceSize / 2;
+            //Layer_Background.View = ViewTest;
+            //Layer_Game.View = ViewTest;
+            
             // Background
             var part = 0.60f;
             Layer_Background.Add(
@@ -44,7 +51,7 @@ namespace PizzaGame
                 { Position = new Vector2f(_Core.DeviceSize.X * 0.4f, 0) });
 
             // Game Field
-            _GridSize = new Vector2u(5, 5);
+            _GridSize = new Vector2u(3, 3);
             LoadGrid(Layer_Game);
             UpdateGrid();
 
