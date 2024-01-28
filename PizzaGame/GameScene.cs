@@ -17,6 +17,7 @@ namespace PizzaGame
     internal class GameScene : Scene
     {
         private static readonly Vector2f _TileSize = new Vector2f(464, 217);
+        private Vector2f _AnimationTargetPos;
         private Vector2u _GridSize;
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
@@ -25,12 +26,12 @@ namespace PizzaGame
         private Vector2f _Direction = new Vector2f();
         private float _Speed = 100;
         private FloatRect _GridBounds;
-        private TextItem _DebugTxt;
         private Polygon _GameField;
         private TextureLoader _SalamiLoader;
         private TextureLoader _OlivLoader;
         private TextureLoader _TomatoLoader;
         private float _GoodieTime = 2, _GoodieReset = 2;
+        private bool _GoodyIsSpwaning = false;
         private int _FlightCount = 5;
 
         public float XMod { get; set; } = 0.5f;
@@ -79,6 +80,7 @@ namespace PizzaGame
             Layer_Background.Add(
                 new Rectangle(_Core, new Vector2f(_Core.DeviceSize.X * 0.2f, _Core.DeviceSize.Y * (1 - part)), Color.Cyan)
                 { Position = new Vector2f(_Core.DeviceSize.X * 0.4f, 0) });
+            _AnimationTargetPos = Layer_Background.GetAll<Rectangle>().Last().Position;
 
             // Game Field
             _GridSize = new Vector2u(3, 3);
@@ -92,31 +94,18 @@ namespace PizzaGame
             _Mouse.Position = GridToPos(2, 2) + MapOffset;
             _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
             Layer_Game.Add(_Mouse);
-            Layer_Game.Add(_GameField);
 
             // Pickups
             _SalamiLoader = new TextureLoader("Assets\\Salami");
             _OlivLoader = new TextureLoader("Assets\\Olive");
             _TomatoLoader = new TextureLoader("Assets\\Tomate");
 
-
-
-            _Mouse.Visible = false;
-            for (int i = 0; i < 500; i++)
-            {
-            }
-
             // Temp
-            Input.KeyPressed += k => UpdateGrid();
-            Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition - MapOffset));
-
-            _DebugTxt = new TextItem(_Core)
-            {
-                Position = new Vector2f(20, 150)
-            };
-            Layer_Overlay.Add(_DebugTxt);
+            //Input.KeyPressed += k => UpdateGrid();
+            //Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition - MapOffset));
 
             _DebugMarker = new Rectangle(_Core, new Vector2f(5, 8), Color.Blue);
+            _DebugMarker.Position = _AnimationTargetPos;
             Layer_Overlay.Add(_DebugMarker);
 
             //OpenInspector();
@@ -131,22 +120,12 @@ namespace PizzaGame
 
             // Goodie Spawn
             _GoodieTime -= deltaT;
-            if (_GoodieTime < 0)
+            if (_GoodieTime < 0 && !_GoodyIsSpwaning)
             {
                 _GoodieTime = _GoodieReset;
-                if (_GoodieReset > 1) _GoodieReset *= 0.9f;
+                _GoodieReset *= 0.9f;
                 SpawnGoodie();
             }
-
-            // Debug
-            var index = PosToGrid(Input.MousePosition - MapOffset);
-            _DebugTxt.Text = index.ToString();
-            foreach (var g in _Grid) g.Alpha = 1;
-            if (index.X < 0) index.X = 0;
-            if (index.Y < 0) index.Y = 0;
-            if (index.X >= _GridSize.X) index.X = (int)_GridSize.X - 1;
-            if (index.Y >= _GridSize.Y) index.Y = (int)_GridSize.Y - 1;
-            _Grid[index.X, index.Y].Alpha = 0.5f;
         }
 
 
@@ -338,6 +317,7 @@ namespace PizzaGame
         }
         private void SpawnGoodie()
         {
+            _GoodyIsSpwaning = true;
             Vector2f pos;
             Vector2i index;
             PizzaPiece piece;
@@ -347,19 +327,20 @@ namespace PizzaGame
                 index = PosToGrid(pos - MapOffset);
                 index = new(Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
                             Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1));
-                _DebugMarker.Position = pos;
+                
                 piece = _Grid[index.X, index.Y];
             }
-            while (!_GameField.CollidesWith(pos) && !piece.GoneFlying);
+            while (!_GameField.CollidesWith(pos) || piece.GoneFlying);
 
             var goodie = GetRandomGooodie();
             Layer_Overlay.Add(goodie);
-            _Core.AnimationManager.Run(-100, pos.Y, 1,
+            _Core.AnimationManager.Run(-100, (float)Math.Round(pos.Y), 1,
                 v => goodie.Position = new Vector2f(pos.X, v),
                 () =>
                 {
+                    _GoodyIsSpwaning = false;
                     goodie.Paused = false;
-                    CheckForFlight(piece);
+                    if(!piece.GoneFlying) CheckForFlight(piece);
                 });
         }
 
@@ -367,11 +348,33 @@ namespace PizzaGame
         {
             if (piece.GoodyCount++ >= _FlightCount)
             {
+                piece.GoneFlying = true;
+                Layer_Game.Add(piece); // move to to top
+
                 foreach (var goody in Layer_Overlay.GetAll<FrameAnimation>())
                 {
-                    //piece.Add(goodie);
-                    ///goodie.Position = goodie.Position.ToLocal(piece.Position).DivideBy(piece.Scale);
+                    var index = PosToGrid(goody.Position-MapOffset);
+                    if (index == piece.Index)
+                    {
+                        goody.Scale = new Vector2f(1, 1);
+                        piece.Add(goody);
+                        goody.Position = goody.Position.ToLocal(piece.Position).DivideBy(piece.Scale);
+                    }
                 }
+
+                _Core.AnimationManager.Run(piece.Position.Y, piece.Position.Y - 100, 1.5f,
+                    v => piece.Position = new Vector2f(piece.Position.X, v),
+                    () =>
+                    {
+                        _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, 1.5f,
+                        v => piece.Position = new Vector2f(v, piece.Position.Y), null, InterpolationType.InExpo);
+
+                        _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, 1.5f,
+                        v => piece.Position = new Vector2f(piece.Position.X, v), 
+                        ()=> Layer_Game.Remove(piece),
+                        InterpolationType.InExpo);
+                    },
+                    InterpolationType.OutElastic);
             }
         }
 
