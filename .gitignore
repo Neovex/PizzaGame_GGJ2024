@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/PizzaGame/Assets/ingame_loop.ogg
+/PizzaGame/Assets/menu_loop.ogg

@@ -23,7 +23,9 @@
     <None Remove="Assets\m2.png" />
     <None Remove="Assets\m3.png" />
     <None Remove="Assets\msc_ingame_loop.ogg" />
+    <None Remove="Assets\msc_ingame_loop.wav" />
     <None Remove="Assets\msc_menu_loop.ogg" />
+    <None Remove="Assets\msc_menu_loop.wav" />
     <None Remove="Assets\Olive\0000.png" />
     <None Remove="Assets\Olive\0001.png" />
     <None Remove="Assets\Olive\0002.png" />
@@ -237,10 +239,10 @@
     <Content Include="Assets\m3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\msc_ingame_loop.ogg">
+    <Content Include="Assets\msc_ingame_loop.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\msc_menu_loop.ogg">
+    <Content Include="Assets\msc_menu_loop.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Salami\0040.png">
