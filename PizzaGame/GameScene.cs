@@ -430,6 +430,8 @@ namespace PizzaGame
                         {
                             Layer_Game.Remove(piece);
                             _SfxMan.Play("sfx_food_hiss");
+                            if (_Grid.Cast<PizzaPiece>().All(p => p.GoneFlying))
+                                _Core.SceneManager.ChangeScene(new MenueScene(_Core));
                         },
                         InterpolationType.InExpo);
                     },
