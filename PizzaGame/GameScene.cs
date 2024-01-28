@@ -147,6 +147,7 @@ namespace PizzaGame
                     {
                         anim.Parent.Remove(anim);
                         _SfxMan.Play("sfx_mouse_eat-00" + _Core.Random.Next(1, 4));
+                        PosToPiece(anim.Position).GoodyCount--;
                     }
                 }
             };
@@ -173,11 +174,8 @@ namespace PizzaGame
             //Input
             CheckInput();
             _DebugMarker.Position = _PlayerContainer.Position + _Direction * 75;
-            var pos  = _PlayerContainer.Position + _Direction * _Speed * deltaT;
-            var index = PosToGrid(pos - MapOffset);
-            index = new(Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
-                        Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1));
-            var piece = _Grid[index.X, index.Y];
+            var pos = _PlayerContainer.Position + _Direction * _Speed * deltaT;
+            PizzaPiece piece = PosToPiece(pos);
             if (_GameField.CollidesWith(pos) && !piece.GoneFlying)
             {
                 _PlayerContainer.Position = pos;
@@ -290,7 +288,6 @@ namespace PizzaGame
             }
         }
 
-
         private void UpdateGrid()
         {
             var min = GridToPos(0, (int)_GridSize.Y);
@@ -320,7 +317,6 @@ namespace PizzaGame
                 }, null, Color.Magenta)
             { OutlineThickness = 2 };
         }
-
 
         private Vector2i PosToGrid(Vector2f pos)
         {
@@ -354,6 +350,13 @@ namespace PizzaGame
             return new(
                    x * a + y * b,
                    x * c + y * d);
+        }
+
+        private PizzaPiece PosToPiece(Vector2f pos)
+        {
+            var index = PosToGrid(pos - MapOffset);
+            return _Grid[Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
+                         Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1)];
         }
 
         private FrameAnimation GetRandomGooodie()
@@ -396,16 +399,11 @@ namespace PizzaGame
         {
             _GoodyIsSpwaning = true;
             Vector2f pos;
-            Vector2i index;
             PizzaPiece piece;
             do
             {
                 pos = _Core.Random.NextVector(_GridBounds);
-                index = PosToGrid(pos - MapOffset);
-                index = new(Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
-                            Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1));
-                
-                piece = _Grid[index.X, index.Y];
+                piece = PosToPiece(pos);
             }
             while (!_GameField.CollidesWith(pos) || piece.GoneFlying);
 
@@ -416,6 +414,7 @@ namespace PizzaGame
                 v => goodie.Position = new Vector2f(pos.X, v),
                 () =>
                 {
+                    if (Destroyed) return;
                     _GoodyIsSpwaning = false;
                     goodie.Paused = false;
                     _SfxMan.Play("sfx_food_impact");
@@ -432,8 +431,7 @@ namespace PizzaGame
 
                 foreach (var goody in Layer_Overlay.GetAll<FrameAnimation>())
                 {
-                    var index = PosToGrid(goody.Position-MapOffset);
-                    if (index == piece.Index)
+                    if (piece == PosToPiece(goody.Position))
                     {
                         goody.Scale = new Vector2f(1, 1);
                         piece.Add(goody);
@@ -442,38 +440,51 @@ namespace PizzaGame
                 }
 
                 _Core.AnimationManager.Run(piece.Position.Y, piece.Position.Y - 100, 1.5f,
-                    v => piece.Position = new Vector2f(piece.Position.X, v),
-                    () =>
+                v =>
+                {
+                    if (!Destroyed) piece.Position = new Vector2f(piece.Position.X, v);
+                },
+                () =>
+                {
+                    if (Destroyed) return;
+                    var time = 1;
+                    _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, time, v =>
+                    { if (!Destroyed) piece.Position = new Vector2f(v, piece.Position.Y);
+                    }, null, InterpolationType.InExpo);
+
+                    _Core.AnimationManager.Run(piece.Scale.X, .1f, time, v =>
+                    { if (!Destroyed) piece.Scale = new Vector2f(v, v);
+                    }, null, InterpolationType.InExpo);
+
+                    _BGIdle.CurrentFrame = _BGLid.CurrentFrame = _BGLidOpen.CurrentFrame = 0;
+                    _BGLid.Visible = false;
+                    _BGLidOpen.Visible = true;
+                    _Core.AnimationManager.Wait(2, () =>
                     {
-                        if (_Core.SceneManager.CurrentSceneName != Name) return;
-                        var time = 1;
-                        _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, time,
-                        v => piece.Position = new Vector2f(v, piece.Position.Y), null, InterpolationType.InExpo);
+                        if (Destroyed) return;
+                        _BGLid.Visible = true;
+                        _BGLidOpen.Visible = false;
+                    });
 
-                        _Core.AnimationManager.Run(piece.Scale.X, .1f, time,
-                        v => piece.Scale = new Vector2f(v, v), null, InterpolationType.InExpo);
-
-                        _BGIdle.CurrentFrame = _BGLid.CurrentFrame = _BGLidOpen.CurrentFrame = 0;
-                        _BGLid.Visible = false;
-                        _BGLidOpen.Visible = true;
-                        _Core.AnimationManager.Wait(2, () =>
+                    _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, time,
+                    v =>
+                    {
+                        if (!Destroyed) piece.Position = new Vector2f(piece.Position.X, v);
+                    }, 
+                    ()=>
+                    {
+                        if (Destroyed) return;
+                        Layer_Game.Remove(piece);
+                        _SfxMan.Play("sfx_food_hiss");
+                        if (_Grid.Cast<PizzaPiece>().All(p => p.GoneFlying))
                         {
-                            _BGLid.Visible = true;
-                            _BGLidOpen.Visible = false;
-                        });
-
-                        _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, time,
-                        v => piece.Position = new Vector2f(piece.Position.X, v), 
-                        ()=>
-                        {
-                            Layer_Game.Remove(piece);
-                            _SfxMan.Play("sfx_food_hiss");
-                            if (_Grid.Cast<PizzaPiece>().All(p => p.GoneFlying))
-                                _Core.SceneManager.ChangeScene(new MenueScene(_Core));
-                        },
-                        InterpolationType.InExpo);
+                            _Core.AnimationManager.Wait(1, () =>
+                                _Core.SceneManager.ChangeScene(new MenueScene(_Core)));
+                        }
                     },
-                    InterpolationType.OutElastic);
+                    InterpolationType.InExpo);
+                },
+                InterpolationType.OutElastic);
             }
         }
 
