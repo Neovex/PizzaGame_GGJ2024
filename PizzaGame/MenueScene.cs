@@ -22,7 +22,9 @@ namespace PizzaGame
         {
             _Music = MusicLoader.Load("msc_menu_loop");
             _Music.Loop = true;
-            //_Music.Play();
+#if !DEBUG
+            _Music.Play();
+#endif
 
             Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
 
