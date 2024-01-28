@@ -20,7 +20,7 @@ namespace PizzaGame
         private Vector2u _GridSize;
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
-        private Graphic[,] _Grid = new Graphic[0, 0];
+        private PizzaPiece[,] _Grid = new PizzaPiece[0, 0];
         private FrameAnimation _Mouse;
         private Vector2f _Direction = new Vector2f();
         private float _Speed = 100;
@@ -30,6 +30,8 @@ namespace PizzaGame
         private TextureLoader _SalamiLoader;
         private TextureLoader _OlivLoader;
         private TextureLoader _TomatoLoader;
+        private float _GoodieTime = 2, _GoodieReset = 2;
+        private int _FlightCount = 5;
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
@@ -39,6 +41,8 @@ namespace PizzaGame
         private Music _BgMusic;
         private SfxManager _SfxMan;
         private string[] _SfxFiles = new[] { "sfx_button_backward", "sfx_button_forward", "sfx_button_hover", "sfx_food_hiss", "sfx_food_impact", "sfx_mouse_eat-001", "sfx_mouse_eat-002", "sfx_mouse_eat-003" };
+        private Rectangle _DebugMarker;
+
         public View ViewTest { get; private set; }
 
         public GameScene(Core core) : base(core, "PizzaTime", "Assets")
@@ -55,7 +59,7 @@ namespace PizzaGame
 #endif
 
             // SFX
-            _SfxMan = new SfxManager(SfxLoader, ()=> Program.SFX_VOLUME);
+            _SfxMan = new SfxManager(SfxLoader, () => Program.SFX_VOLUME);
             foreach (var sfxFile in _SfxFiles) _SfxMan.AddToLibrary(sfxFile, 2);
             //_Core.AnimationManager.Wait(4, () => _SfxMan.Play(_SfxFiles[3]));
 
@@ -66,7 +70,7 @@ namespace PizzaGame
             ViewTest.Center = _Core.DeviceSize / 2;
             //Layer_Background.View = ViewTest;
             //Layer_Game.View = ViewTest;
-            
+
             // Background
             var part = 0.60f;
             Layer_Background.Add(
@@ -88,7 +92,7 @@ namespace PizzaGame
             _Mouse.Position = GridToPos(2, 2) + MapOffset;
             _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
             Layer_Game.Add(_Mouse);
-            //Layer_Game.Add(_GameField);
+            Layer_Game.Add(_GameField);
 
             // Pickups
             _SalamiLoader = new TextureLoader("Assets\\Salami");
@@ -98,49 +102,22 @@ namespace PizzaGame
 
 
             _Mouse.Visible = false;
-            var bounds = new IntRect(default, _GridSize.ToVector2i());
             for (int i = 0; i < 500; i++)
             {
-                Vector2f pos;
-                Vector2i g;
-                do
-                {
-                    pos = _Core.Random.NextVector(_GridBounds);
-                }
-                while (!_GameField.CollidesWith(pos));
-
-                Layer_Game.Add(new Rectangle(_Core, new(2, 2), Color.Black)
-                {
-                    Position = pos
-                });;
             }
-
-            var test = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(40, 43).
-                                                            Select(i => _SalamiLoader.Load(i.ToString("D4"))).
-                                                            ToArray());
-            var test2 = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 60).
-                                                            Select(i => _OlivLoader.Load(i.ToString("D4"))).
-                                                            ToArray());
-            var test3 = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).
-                                                            Select(i => _TomatoLoader.Load(i.ToString("D4"))).
-                                                            ToArray());
-
-            test.Position = _Core.DeviceSize / 2;
-            Layer_Game.Add(test);
-            test2.Position = test.Position + new Vector2f(100, 0);
-            Layer_Game.Add(test2);
-            test3.Position = test2.Position + new Vector2f(100, 0);
-            Layer_Game.Add(test3);
 
             // Temp
             Input.KeyPressed += k => UpdateGrid();
-            Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition-MapOffset));
+            Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition - MapOffset));
 
             _DebugTxt = new TextItem(_Core)
             {
                 Position = new Vector2f(20, 150)
             };
             Layer_Overlay.Add(_DebugTxt);
+
+            _DebugMarker = new Rectangle(_Core, new Vector2f(5, 8), Color.Blue);
+            Layer_Overlay.Add(_DebugMarker);
 
             //OpenInspector();
             return true;
@@ -152,6 +129,15 @@ namespace PizzaGame
             CheckInput();
             _Mouse.Position = _Mouse.Position + _Direction * _Speed * deltaT;
 
+            // Goodie Spawn
+            _GoodieTime -= deltaT;
+            if (_GoodieTime < 0)
+            {
+                _GoodieTime = _GoodieReset;
+                if (_GoodieReset > 1) _GoodieReset *= 0.9f;
+                SpawnGoodie();
+            }
+
             // Debug
             var index = PosToGrid(Input.MousePosition - MapOffset);
             _DebugTxt.Text = index.ToString();
@@ -162,6 +148,7 @@ namespace PizzaGame
             if (index.Y >= _GridSize.Y) index.Y = (int)_GridSize.Y - 1;
             _Grid[index.X, index.Y].Alpha = 0.5f;
         }
+
 
         private void CheckInput()
         {
@@ -233,12 +220,12 @@ namespace PizzaGame
                 return textures[0];
             }
 
-            _Grid = new Graphic[_GridSize.X, _GridSize.Y];
+            _Grid = new PizzaPiece[_GridSize.X, _GridSize.Y];
             for (int x = 0; x < _GridSize.X; x++)
             {
                 for (int y = 0; y < _GridSize.Y; y++)
                 {
-                    Graphic tile = new Graphic(_Core, GetTexFor(x, y));
+                    var tile = new PizzaPiece(_Core, GetTexFor(x, y), x, y);
                     parent.Add(tile);
                     _Grid[x, y] = tile;
                 }
@@ -257,7 +244,7 @@ namespace PizzaGame
             _GridBounds = new FloatRect(_Core.DeviceSize.X / 2 - width / 2,
                                         _Core.DeviceSize.Y * 0.75f - height / 2,
                                         width, height);
-            MapOffset = new Vector2f(_Core.DeviceSize.X / 2 - _TileSize.X * MapScale / 2, 
+            MapOffset = new Vector2f(_Core.DeviceSize.X / 2 - _TileSize.X * MapScale / 2,
                                      _Core.DeviceSize.Y * 0.75f - height / 2);
 
             for (int x = 0; x < _GridSize.X; x++)
@@ -311,6 +298,81 @@ namespace PizzaGame
             return new(
                    x * a + y * b,
                    x * c + y * d);
+        }
+
+        private FrameAnimation GetRandomGooodie()
+        {
+            int min = 0, max = 0;
+            TextureLoader loader = TextureLoader;
+            Vector2f origin = default;
+            switch (_Core.Random.Next(3))
+            {
+                case 0:
+                    min = 40;
+                    max = 43;
+                    loader = _SalamiLoader;
+                    origin = new Vector2f(75, 53);
+                break;
+                case 1:
+                    min = 21;
+                    max = 60-min;
+                    loader = _OlivLoader;
+                    origin = new Vector2f(53, 40);
+                    break;
+                case 2:
+                    min = 28;
+                    max = 51-min;
+                    loader = _TomatoLoader;
+                    origin = new Vector2f(53, 28);
+                    break;
+            }
+            return new FrameAnimation(_Core, 1f / 60, Enumerable.Range(min, max).
+                                                      Select(i => loader.Load(i.ToString("D4"))).
+                                                      ToArray())
+            {
+                Loop = false,
+                Paused = true,
+                Scale = new Vector2f(MapScale, MapScale),
+                Origin = origin
+            };
+        }
+        private void SpawnGoodie()
+        {
+            Vector2f pos;
+            Vector2i index;
+            PizzaPiece piece;
+            do
+            {
+                pos = _Core.Random.NextVector(_GridBounds);
+                index = PosToGrid(pos - MapOffset);
+                index = new(Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
+                            Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1));
+                _DebugMarker.Position = pos;
+                piece = _Grid[index.X, index.Y];
+            }
+            while (!_GameField.CollidesWith(pos) && !piece.GoneFlying);
+
+            var goodie = GetRandomGooodie();
+            Layer_Overlay.Add(goodie);
+            _Core.AnimationManager.Run(-100, pos.Y, 1,
+                v => goodie.Position = new Vector2f(pos.X, v),
+                () =>
+                {
+                    goodie.Paused = false;
+                    CheckForFlight(piece);
+                });
+        }
+
+        private void CheckForFlight(PizzaPiece piece)
+        {
+            if (piece.GoodyCount++ >= _FlightCount)
+            {
+                foreach (var goody in Layer_Overlay.GetAll<FrameAnimation>())
+                {
+                    //piece.Add(goodie);
+                    ///goodie.Position = goodie.Position.ToLocal(piece.Position).DivideBy(piece.Scale);
+                }
+            }
         }
 
         protected override void Destroy() { }
