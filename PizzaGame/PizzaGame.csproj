@@ -351,6 +351,7 @@
     <None Remove="Assets\sfx_mouse_eat-001.wav" />
     <None Remove="Assets\sfx_mouse_eat-002.wav" />
     <None Remove="Assets\sfx_mouse_eat-003.wav" />
+    <None Remove="Assets\Super Dream.ttf" />
     <None Remove="Assets\Tile1.png" />
     <None Remove="Assets\Tile2.png" />
     <None Remove="Assets\Tile3.png" />
@@ -1252,6 +1253,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\sfx_mouse_eat-003.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Super Dream.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Tomate\0000.png">

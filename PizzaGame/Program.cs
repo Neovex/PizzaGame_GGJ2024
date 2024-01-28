@@ -33,7 +33,7 @@ namespace PizzaGame
                 core.Debug = true;
 #endif
                 //core.SceneManager.ChangeScene(new BlackCoatIntro(core, new TitleScene(core)));
-                core.SceneManager.ChangeScene(new GameScene(core));
+                core.SceneManager.ChangeScene(new MenueScene(core));
                 core.Run();
             }
         }
