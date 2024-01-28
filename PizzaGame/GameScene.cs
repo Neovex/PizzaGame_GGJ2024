@@ -12,6 +12,7 @@ using BlackCoat.Entities.Animation;
 using SFML.Audio;
 using BlackCoat.AssetHandling;
 using System.Reflection;
+using System.Collections.Generic;
 
 namespace PizzaGame
 {
@@ -23,7 +24,8 @@ namespace PizzaGame
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
         private PizzaPiece[,] _Grid = new PizzaPiece[0, 0];
-        private FrameAnimation _Mouse;
+        private Container _PlayerContainer;
+        private FrameAnimation[] _PlayerDirections;
         private Vector2f _Direction = new Vector2f();
         private float _Speed = 100;
         private FloatRect _GridBounds;
@@ -40,6 +42,7 @@ namespace PizzaGame
         private float _GoodieTime = 2, _GoodieReset = 2;
         private bool _GoodyIsSpwaning = false;
         private int _FlightCount = 5;
+        private List<TextureLoader> _Loaders = new List<TextureLoader>();
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
@@ -83,7 +86,6 @@ namespace PizzaGame
             // Background
             Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
 
-#if DEBUG
             _RoboLoader = new TextureLoader("Assets\\Idle_Robo");
             _BGIdle = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _RoboLoader.Load(i.ToString("D4"))).ToArray())
             {
@@ -109,7 +111,6 @@ namespace PizzaGame
                 Visible = false
             };
             Layer_Background.Add(_BGLidOpen);
-#endif
 
 
             // Game Field
@@ -118,14 +119,24 @@ namespace PizzaGame
             UpdateGrid();
 
             // Player
-            var playerGfx = new[] { "m1-Links", "m2-ObenLinks", "m3-ObenMitte", "m4-ObenRechts", "m5-Rechts", "m6-UntenRechts", "m7-Unten", "m8-UntenLinks" };
-            var playerTex = playerGfx.Select(f => TextureLoader.Load(f)).ToArray();
-            _Mouse = new FrameAnimation(_Core, .1f, playerTex);
-            _Mouse.Paused = true;
-            _Mouse.Origin = playerTex[0].Size.ToVector2f() / 2;
-            _Mouse.Position = GridToPos(2, 2) + MapOffset;
-            _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
-            Layer_Game.Add(_Mouse);
+            _PlayerContainer = new Container(_Core);
+            _PlayerContainer.Position = GridToPos(2, 2) + MapOffset;
+            _PlayerContainer.Scale = new Vector2f(MapScale, MapScale) * .7f;
+            Layer_Overlay.Add(_PlayerContainer);
+
+            var playerGfx = new[] { "1-Links", "2-ObenLinks", "3-ObenMitte",
+                                    "4-ObenRechts", "5-Rechts", "6-UntenRechts",
+                                    "7-Unten", "8-UntenLinks" };
+            _PlayerDirections = playerGfx.Select(r =>
+            {
+                var loader = new TextureLoader("Assets\\Maus\\" + r);
+                _Loaders.Add(loader);
+                var playerTex = Enumerable.Range(0, 60).Select(i => loader.Load(i.ToString("D4"))).ToArray();
+                _PlayerContainer.Origin = playerTex[0].Size.ToVector2f() / 2;
+                var anim = new FrameAnimation(_Core, 1f / 60, playerTex);
+                _PlayerContainer.Add(anim);
+                return anim;
+            }).ToArray();
 
             Input.KeyPressed += k =>
             {
@@ -161,15 +172,15 @@ namespace PizzaGame
         {
             //Input
             CheckInput();
-            _DebugMarker.Position = _Mouse.Position + _Direction * 75;
-            var pos  = _Mouse.Position + _Direction * _Speed * deltaT;
+            _DebugMarker.Position = _PlayerContainer.Position + _Direction * 75;
+            var pos  = _PlayerContainer.Position + _Direction * _Speed * deltaT;
             var index = PosToGrid(pos - MapOffset);
             index = new(Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
                         Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1));
             var piece = _Grid[index.X, index.Y];
             if (_GameField.CollidesWith(pos) && !piece.GoneFlying)
             {
-                _Mouse.Position = pos;
+                _PlayerContainer.Position = pos;
             }
 
             // Goodie Spawn
@@ -182,50 +193,64 @@ namespace PizzaGame
             }
         }
 
-
+        private int _LastDir = 0;
         private void CheckInput()
         {
+            foreach (var dir in _PlayerDirections)
+            {
+                dir.Visible = false;
+                dir.Paused = false;
+            }
             if (Input.IsKeyDown(Keyboard.Key.W, Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Up, Keyboard.Key.Left))
             {
                 _Direction = new Vector2f(-1, -1);
-                _Mouse.CurrentFrame = 1;
+                _PlayerDirections[_LastDir=1].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.W, Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Up, Keyboard.Key.Right))
             {
                 _Direction = new Vector2f(1, -1);
-                _Mouse.CurrentFrame = 3;
+                _PlayerDirections[_LastDir = 3].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.S, Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Down, Keyboard.Key.Left))
             {
                 _Direction = new Vector2f(-1, 1);
-                _Mouse.CurrentFrame = 7;
+                _PlayerDirections[_LastDir = 7].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.S, Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Down, Keyboard.Key.Right))
             {
                 _Direction = new Vector2f(1, 1);
-                _Mouse.CurrentFrame = 5;
+                _PlayerDirections[_LastDir = 5].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.W) || Input.IsKeyDown(Keyboard.Key.Up))
             {
                 _Direction = new Vector2f(0, -1);
-                _Mouse.CurrentFrame = 2;
+                _PlayerDirections[_LastDir = 2].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Left))
             {
                 _Direction = new Vector2f(-1, 0);
-                _Mouse.CurrentFrame = 0;
+                _PlayerDirections[_LastDir = 0].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.S) || Input.IsKeyDown(Keyboard.Key.Down))
             {
                 _Direction = new Vector2f(0, 1);
-                _Mouse.CurrentFrame = 6;
+                _PlayerDirections[_LastDir = 6].Visible = true;
             }
             else if (Input.IsKeyDown(Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Right))
             {
                 _Direction = new Vector2f(1, 0);
-                _Mouse.CurrentFrame = 4;
+                _PlayerDirections[_LastDir = 4].Visible = true;
             }
-            else _Direction = default;
+            else
+            {
+                _Direction = default;
+                foreach (var dir in _PlayerDirections)
+                {
+                    dir.Paused = true;
+                    dir.CurrentFrame = 17;
+                }
+                _PlayerDirections[_LastDir].Visible = true;
+            }
         }
 
         private void LoadGrid(Container parent)
@@ -386,6 +411,7 @@ namespace PizzaGame
 
             var goodie = GetRandomGooodie();
             Layer_Overlay.Add(goodie);
+            Layer_Overlay.Add(_PlayerContainer);
             _Core.AnimationManager.Run(-100, (float)Math.Round(pos.Y), 1,
                 v => goodie.Position = new Vector2f(pos.X, v),
                 () =>
@@ -419,6 +445,7 @@ namespace PizzaGame
                     v => piece.Position = new Vector2f(piece.Position.X, v),
                     () =>
                     {
+                        if (_Core.SceneManager.CurrentSceneName != Name) return;
                         var time = 1;
                         _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, time,
                         v => piece.Position = new Vector2f(v, piece.Position.Y), null, InterpolationType.InExpo);

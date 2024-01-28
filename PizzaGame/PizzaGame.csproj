@@ -233,17 +233,489 @@
     <None Remove="Assets\KlappeIdle\0069.png" />
     <None Remove="Assets\KlappeIdle\0070.png" />
     <None Remove="Assets\m0.png" />
-    <None Remove="Assets\m1-Links.png" />
     <None Remove="Assets\m1.png" />
-    <None Remove="Assets\m2-ObenLinks.png" />
     <None Remove="Assets\m2.png" />
-    <None Remove="Assets\m3-ObenMitte.png" />
     <None Remove="Assets\m3.png" />
-    <None Remove="Assets\m4-ObenRechts.png" />
-    <None Remove="Assets\m5-Rechts.png" />
-    <None Remove="Assets\m6-UntenRechts.png" />
-    <None Remove="Assets\m7-Unten.png" />
-    <None Remove="Assets\m8-UntenLinks.png" />
+    <None Remove="Assets\Maus\1-Links\0000.png" />
+    <None Remove="Assets\Maus\1-Links\0001.png" />
+    <None Remove="Assets\Maus\1-Links\0002.png" />
+    <None Remove="Assets\Maus\1-Links\0003.png" />
+    <None Remove="Assets\Maus\1-Links\0004.png" />
+    <None Remove="Assets\Maus\1-Links\0005.png" />
+    <None Remove="Assets\Maus\1-Links\0006.png" />
+    <None Remove="Assets\Maus\1-Links\0007.png" />
+    <None Remove="Assets\Maus\1-Links\0008.png" />
+    <None Remove="Assets\Maus\1-Links\0009.png" />
+    <None Remove="Assets\Maus\1-Links\0010.png" />
+    <None Remove="Assets\Maus\1-Links\0011.png" />
+    <None Remove="Assets\Maus\1-Links\0012.png" />
+    <None Remove="Assets\Maus\1-Links\0013.png" />
+    <None Remove="Assets\Maus\1-Links\0014.png" />
+    <None Remove="Assets\Maus\1-Links\0015.png" />
+    <None Remove="Assets\Maus\1-Links\0016.png" />
+    <None Remove="Assets\Maus\1-Links\0017.png" />
+    <None Remove="Assets\Maus\1-Links\0018.png" />
+    <None Remove="Assets\Maus\1-Links\0019.png" />
+    <None Remove="Assets\Maus\1-Links\0020.png" />
+    <None Remove="Assets\Maus\1-Links\0021.png" />
+    <None Remove="Assets\Maus\1-Links\0022.png" />
+    <None Remove="Assets\Maus\1-Links\0023.png" />
+    <None Remove="Assets\Maus\1-Links\0024.png" />
+    <None Remove="Assets\Maus\1-Links\0025.png" />
+    <None Remove="Assets\Maus\1-Links\0026.png" />
+    <None Remove="Assets\Maus\1-Links\0027.png" />
+    <None Remove="Assets\Maus\1-Links\0028.png" />
+    <None Remove="Assets\Maus\1-Links\0029.png" />
+    <None Remove="Assets\Maus\1-Links\0030.png" />
+    <None Remove="Assets\Maus\1-Links\0031.png" />
+    <None Remove="Assets\Maus\1-Links\0032.png" />
+    <None Remove="Assets\Maus\1-Links\0033.png" />
+    <None Remove="Assets\Maus\1-Links\0034.png" />
+    <None Remove="Assets\Maus\1-Links\0035.png" />
+    <None Remove="Assets\Maus\1-Links\0036.png" />
+    <None Remove="Assets\Maus\1-Links\0037.png" />
+    <None Remove="Assets\Maus\1-Links\0038.png" />
+    <None Remove="Assets\Maus\1-Links\0039.png" />
+    <None Remove="Assets\Maus\1-Links\0040.png" />
+    <None Remove="Assets\Maus\1-Links\0041.png" />
+    <None Remove="Assets\Maus\1-Links\0042.png" />
+    <None Remove="Assets\Maus\1-Links\0043.png" />
+    <None Remove="Assets\Maus\1-Links\0044.png" />
+    <None Remove="Assets\Maus\1-Links\0045.png" />
+    <None Remove="Assets\Maus\1-Links\0046.png" />
+    <None Remove="Assets\Maus\1-Links\0047.png" />
+    <None Remove="Assets\Maus\1-Links\0048.png" />
+    <None Remove="Assets\Maus\1-Links\0049.png" />
+    <None Remove="Assets\Maus\1-Links\0050.png" />
+    <None Remove="Assets\Maus\1-Links\0051.png" />
+    <None Remove="Assets\Maus\1-Links\0052.png" />
+    <None Remove="Assets\Maus\1-Links\0053.png" />
+    <None Remove="Assets\Maus\1-Links\0054.png" />
+    <None Remove="Assets\Maus\1-Links\0055.png" />
+    <None Remove="Assets\Maus\1-Links\0056.png" />
+    <None Remove="Assets\Maus\1-Links\0057.png" />
+    <None Remove="Assets\Maus\1-Links\0058.png" />
+    <None Remove="Assets\Maus\1-Links\0059.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0000.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0001.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0002.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0003.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0004.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0005.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0006.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0007.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0008.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0009.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0010.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0011.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0012.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0013.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0014.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0015.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0016.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0017.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0018.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0019.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0020.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0021.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0022.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0023.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0024.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0025.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0026.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0027.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0028.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0029.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0030.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0031.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0032.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0033.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0034.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0035.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0036.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0037.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0038.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0039.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0040.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0041.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0042.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0043.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0044.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0045.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0046.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0047.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0048.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0049.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0050.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0051.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0052.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0053.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0054.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0055.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0056.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0057.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0058.png" />
+    <None Remove="Assets\Maus\2-ObenLinks\0059.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0000.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0001.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0002.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0003.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0004.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0005.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0006.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0007.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0008.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0009.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0010.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0011.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0012.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0013.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0014.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0015.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0016.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0017.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0018.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0019.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0020.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0021.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0022.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0023.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0024.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0025.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0026.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0027.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0028.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0029.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0030.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0031.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0032.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0033.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0034.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0035.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0036.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0037.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0038.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0039.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0040.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0041.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0042.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0043.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0044.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0045.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0046.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0047.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0048.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0049.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0050.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0051.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0052.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0053.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0054.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0055.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0056.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0057.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0058.png" />
+    <None Remove="Assets\Maus\3-ObenMitte\0059.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0000.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0001.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0002.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0003.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0004.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0005.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0006.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0007.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0008.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0009.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0010.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0011.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0012.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0013.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0014.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0015.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0016.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0017.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0018.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0019.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0020.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0021.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0022.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0023.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0024.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0025.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0026.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0027.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0028.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0029.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0030.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0031.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0032.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0033.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0034.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0035.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0036.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0037.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0038.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0039.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0040.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0041.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0042.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0043.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0044.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0045.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0046.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0047.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0048.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0049.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0050.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0051.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0052.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0053.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0054.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0055.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0056.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0057.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0058.png" />
+    <None Remove="Assets\Maus\4-ObenRechts\0059.png" />
+    <None Remove="Assets\Maus\5-Rechts\0000.png" />
+    <None Remove="Assets\Maus\5-Rechts\0001.png" />
+    <None Remove="Assets\Maus\5-Rechts\0002.png" />
+    <None Remove="Assets\Maus\5-Rechts\0003.png" />
+    <None Remove="Assets\Maus\5-Rechts\0004.png" />
+    <None Remove="Assets\Maus\5-Rechts\0005.png" />
+    <None Remove="Assets\Maus\5-Rechts\0006.png" />
+    <None Remove="Assets\Maus\5-Rechts\0007.png" />
+    <None Remove="Assets\Maus\5-Rechts\0008.png" />
+    <None Remove="Assets\Maus\5-Rechts\0009.png" />
+    <None Remove="Assets\Maus\5-Rechts\0010.png" />
+    <None Remove="Assets\Maus\5-Rechts\0011.png" />
+    <None Remove="Assets\Maus\5-Rechts\0012.png" />
+    <None Remove="Assets\Maus\5-Rechts\0013.png" />
+    <None Remove="Assets\Maus\5-Rechts\0014.png" />
+    <None Remove="Assets\Maus\5-Rechts\0015.png" />
+    <None Remove="Assets\Maus\5-Rechts\0016.png" />
+    <None Remove="Assets\Maus\5-Rechts\0017.png" />
+    <None Remove="Assets\Maus\5-Rechts\0018.png" />
+    <None Remove="Assets\Maus\5-Rechts\0019.png" />
+    <None Remove="Assets\Maus\5-Rechts\0020.png" />
+    <None Remove="Assets\Maus\5-Rechts\0021.png" />
+    <None Remove="Assets\Maus\5-Rechts\0022.png" />
+    <None Remove="Assets\Maus\5-Rechts\0023.png" />
+    <None Remove="Assets\Maus\5-Rechts\0024.png" />
+    <None Remove="Assets\Maus\5-Rechts\0025.png" />
+    <None Remove="Assets\Maus\5-Rechts\0026.png" />
+    <None Remove="Assets\Maus\5-Rechts\0027.png" />
+    <None Remove="Assets\Maus\5-Rechts\0028.png" />
+    <None Remove="Assets\Maus\5-Rechts\0029.png" />
+    <None Remove="Assets\Maus\5-Rechts\0030.png" />
+    <None Remove="Assets\Maus\5-Rechts\0031.png" />
+    <None Remove="Assets\Maus\5-Rechts\0032.png" />
+    <None Remove="Assets\Maus\5-Rechts\0033.png" />
+    <None Remove="Assets\Maus\5-Rechts\0034.png" />
+    <None Remove="Assets\Maus\5-Rechts\0035.png" />
+    <None Remove="Assets\Maus\5-Rechts\0036.png" />
+    <None Remove="Assets\Maus\5-Rechts\0037.png" />
+    <None Remove="Assets\Maus\5-Rechts\0038.png" />
+    <None Remove="Assets\Maus\5-Rechts\0039.png" />
+    <None Remove="Assets\Maus\5-Rechts\0040.png" />
+    <None Remove="Assets\Maus\5-Rechts\0041.png" />
+    <None Remove="Assets\Maus\5-Rechts\0042.png" />
+    <None Remove="Assets\Maus\5-Rechts\0043.png" />
+    <None Remove="Assets\Maus\5-Rechts\0044.png" />
+    <None Remove="Assets\Maus\5-Rechts\0045.png" />
+    <None Remove="Assets\Maus\5-Rechts\0046.png" />
+    <None Remove="Assets\Maus\5-Rechts\0047.png" />
+    <None Remove="Assets\Maus\5-Rechts\0048.png" />
+    <None Remove="Assets\Maus\5-Rechts\0049.png" />
+    <None Remove="Assets\Maus\5-Rechts\0050.png" />
+    <None Remove="Assets\Maus\5-Rechts\0051.png" />
+    <None Remove="Assets\Maus\5-Rechts\0052.png" />
+    <None Remove="Assets\Maus\5-Rechts\0053.png" />
+    <None Remove="Assets\Maus\5-Rechts\0054.png" />
+    <None Remove="Assets\Maus\5-Rechts\0055.png" />
+    <None Remove="Assets\Maus\5-Rechts\0056.png" />
+    <None Remove="Assets\Maus\5-Rechts\0057.png" />
+    <None Remove="Assets\Maus\5-Rechts\0058.png" />
+    <None Remove="Assets\Maus\5-Rechts\0059.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0000.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0001.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0002.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0003.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0004.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0005.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0006.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0007.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0008.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0009.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0010.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0011.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0012.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0013.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0014.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0015.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0016.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0017.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0018.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0019.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0020.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0021.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0022.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0023.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0024.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0025.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0026.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0027.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0028.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0029.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0030.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0031.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0032.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0033.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0034.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0035.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0036.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0037.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0038.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0039.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0040.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0041.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0042.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0043.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0044.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0045.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0046.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0047.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0048.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0049.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0050.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0051.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0052.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0053.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0054.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0055.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0056.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0057.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0058.png" />
+    <None Remove="Assets\Maus\6-UntenRechts\0059.png" />
+    <None Remove="Assets\Maus\7-Unten\0000.png" />
+    <None Remove="Assets\Maus\7-Unten\0001.png" />
+    <None Remove="Assets\Maus\7-Unten\0002.png" />
+    <None Remove="Assets\Maus\7-Unten\0003.png" />
+    <None Remove="Assets\Maus\7-Unten\0004.png" />
+    <None Remove="Assets\Maus\7-Unten\0005.png" />
+    <None Remove="Assets\Maus\7-Unten\0006.png" />
+    <None Remove="Assets\Maus\7-Unten\0007.png" />
+    <None Remove="Assets\Maus\7-Unten\0008.png" />
+    <None Remove="Assets\Maus\7-Unten\0009.png" />
+    <None Remove="Assets\Maus\7-Unten\0010.png" />
+    <None Remove="Assets\Maus\7-Unten\0011.png" />
+    <None Remove="Assets\Maus\7-Unten\0012.png" />
+    <None Remove="Assets\Maus\7-Unten\0013.png" />
+    <None Remove="Assets\Maus\7-Unten\0014.png" />
+    <None Remove="Assets\Maus\7-Unten\0015.png" />
+    <None Remove="Assets\Maus\7-Unten\0016.png" />
+    <None Remove="Assets\Maus\7-Unten\0017.png" />
+    <None Remove="Assets\Maus\7-Unten\0018.png" />
+    <None Remove="Assets\Maus\7-Unten\0019.png" />
+    <None Remove="Assets\Maus\7-Unten\0020.png" />
+    <None Remove="Assets\Maus\7-Unten\0021.png" />
+    <None Remove="Assets\Maus\7-Unten\0022.png" />
+    <None Remove="Assets\Maus\7-Unten\0023.png" />
+    <None Remove="Assets\Maus\7-Unten\0024.png" />
+    <None Remove="Assets\Maus\7-Unten\0025.png" />
+    <None Remove="Assets\Maus\7-Unten\0026.png" />
+    <None Remove="Assets\Maus\7-Unten\0027.png" />
+    <None Remove="Assets\Maus\7-Unten\0028.png" />
+    <None Remove="Assets\Maus\7-Unten\0029.png" />
+    <None Remove="Assets\Maus\7-Unten\0030.png" />
+    <None Remove="Assets\Maus\7-Unten\0031.png" />
+    <None Remove="Assets\Maus\7-Unten\0032.png" />
+    <None Remove="Assets\Maus\7-Unten\0033.png" />
+    <None Remove="Assets\Maus\7-Unten\0034.png" />
+    <None Remove="Assets\Maus\7-Unten\0035.png" />
+    <None Remove="Assets\Maus\7-Unten\0036.png" />
+    <None Remove="Assets\Maus\7-Unten\0037.png" />
+    <None Remove="Assets\Maus\7-Unten\0038.png" />
+    <None Remove="Assets\Maus\7-Unten\0039.png" />
+    <None Remove="Assets\Maus\7-Unten\0040.png" />
+    <None Remove="Assets\Maus\7-Unten\0041.png" />
+    <None Remove="Assets\Maus\7-Unten\0042.png" />
+    <None Remove="Assets\Maus\7-Unten\0043.png" />
+    <None Remove="Assets\Maus\7-Unten\0044.png" />
+    <None Remove="Assets\Maus\7-Unten\0045.png" />
+    <None Remove="Assets\Maus\7-Unten\0046.png" />
+    <None Remove="Assets\Maus\7-Unten\0047.png" />
+    <None Remove="Assets\Maus\7-Unten\0048.png" />
+    <None Remove="Assets\Maus\7-Unten\0049.png" />
+    <None Remove="Assets\Maus\7-Unten\0050.png" />
+    <None Remove="Assets\Maus\7-Unten\0051.png" />
+    <None Remove="Assets\Maus\7-Unten\0052.png" />
+    <None Remove="Assets\Maus\7-Unten\0053.png" />
+    <None Remove="Assets\Maus\7-Unten\0054.png" />
+    <None Remove="Assets\Maus\7-Unten\0055.png" />
+    <None Remove="Assets\Maus\7-Unten\0056.png" />
+    <None Remove="Assets\Maus\7-Unten\0057.png" />
+    <None Remove="Assets\Maus\7-Unten\0058.png" />
+    <None Remove="Assets\Maus\7-Unten\0059.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0000.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0001.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0002.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0003.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0004.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0005.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0006.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0007.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0008.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0009.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0010.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0011.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0012.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0013.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0014.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0015.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0016.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0017.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0018.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0019.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0020.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0021.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0022.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0023.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0024.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0025.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0026.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0027.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0028.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0029.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0030.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0031.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0032.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0033.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0034.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0035.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0036.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0037.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0038.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0039.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0040.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0041.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0042.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0043.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0044.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0045.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0046.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0047.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0048.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0049.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0050.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0051.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0052.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0053.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0054.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0055.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0056.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0057.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0058.png" />
+    <None Remove="Assets\Maus\8-UntenLinks\0059.png" />
     <None Remove="Assets\msc_ingame_loop.ogg" />
     <None Remove="Assets\msc_ingame_loop.wav" />
     <None Remove="Assets\msc_menu_loop.ogg" />
@@ -1092,28 +1564,1444 @@
     <Content Include="Assets\KlappeIdle\0070.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m1-Links.png">
+    <Content Include="Assets\Maus\1-Links\0000.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m2-ObenLinks.png">
+    <Content Include="Assets\Maus\1-Links\0001.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m3-ObenMitte.png">
+    <Content Include="Assets\Maus\1-Links\0002.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m4-ObenRechts.png">
+    <Content Include="Assets\Maus\1-Links\0003.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m5-Rechts.png">
+    <Content Include="Assets\Maus\1-Links\0004.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m6-UntenRechts.png">
+    <Content Include="Assets\Maus\1-Links\0005.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m7-Unten.png">
+    <Content Include="Assets\Maus\1-Links\0006.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m8-UntenLinks.png">
+    <Content Include="Assets\Maus\1-Links\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\1-Links\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\2-ObenLinks\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\3-ObenMitte\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\4-ObenRechts\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\5-Rechts\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\6-UntenRechts\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\7-Unten\0059.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0049.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0050.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0051.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0052.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0053.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0054.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0055.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0056.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0057.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0058.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maus\8-UntenLinks\0059.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\msc_ingame_loop.wav">
