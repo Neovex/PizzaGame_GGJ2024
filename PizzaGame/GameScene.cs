@@ -117,9 +117,11 @@ namespace PizzaGame
             UpdateGrid();
 
             // Player
-            _Mouse = new FrameAnimation(_Core, .1f, Enumerable.Range(0, 4).Select(i => TextureLoader.Load("m" + i)).ToArray());
+            var playerGfx = new[] { "m1-Links", "m2-ObenLinks", "m3-ObenMitte", "m4-ObenRechts", "m5-Rechts", "m6-UntenRechts", "m7-Unten", "m8-UntenLinks" };
+            var playerTex = playerGfx.Select(f => TextureLoader.Load(f)).ToArray();
+            _Mouse = new FrameAnimation(_Core, .1f, playerTex);
             _Mouse.Paused = true;
-            _Mouse.Origin = TextureLoader.Load("m0").Size.ToVector2f() / 2;
+            _Mouse.Origin = playerTex[0].Size.ToVector2f() / 2;
             _Mouse.Position = GridToPos(2, 2) + MapOffset;
             _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
             Layer_Game.Add(_Mouse);
@@ -129,7 +131,7 @@ namespace PizzaGame
                 if (k != Keyboard.Key.Space) return;
                 foreach (var anim in Layer_Overlay.GetAll<FrameAnimation>())
                 {
-                    if (anim.Position.DistanceBetween(_DebugMarker.Position) < 40)
+                    if (anim.Position.DistanceBetween(_DebugMarker.Position) < 80)
                     {
                         anim.Parent.Remove(anim);
                         _SfxMan.Play("sfx_mouse_eat-00" + _Core.Random.Next(1, 4));
@@ -185,27 +187,27 @@ namespace PizzaGame
             if (Input.IsKeyDown(Keyboard.Key.W, Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Up, Keyboard.Key.Left))
             {
                 _Direction = new Vector2f(-1, -1);
-                _Mouse.CurrentFrame = 0;
+                _Mouse.CurrentFrame = 1;
             }
             else if (Input.IsKeyDown(Keyboard.Key.W, Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Up, Keyboard.Key.Right))
             {
                 _Direction = new Vector2f(1, -1);
-                _Mouse.CurrentFrame = 0;
+                _Mouse.CurrentFrame = 3;
             }
             else if (Input.IsKeyDown(Keyboard.Key.S, Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Down, Keyboard.Key.Left))
             {
                 _Direction = new Vector2f(-1, 1);
-                _Mouse.CurrentFrame = 0;
+                _Mouse.CurrentFrame = 7;
             }
             else if (Input.IsKeyDown(Keyboard.Key.S, Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Down, Keyboard.Key.Right))
             {
                 _Direction = new Vector2f(1, 1);
-                _Mouse.CurrentFrame = 0;
+                _Mouse.CurrentFrame = 5;
             }
             else if (Input.IsKeyDown(Keyboard.Key.W) || Input.IsKeyDown(Keyboard.Key.Up))
             {
                 _Direction = new Vector2f(0, -1);
-                _Mouse.CurrentFrame = 1;
+                _Mouse.CurrentFrame = 2;
             }
             else if (Input.IsKeyDown(Keyboard.Key.A) || Input.IsKeyDown(Keyboard.Key.Left))
             {
@@ -215,12 +217,12 @@ namespace PizzaGame
             else if (Input.IsKeyDown(Keyboard.Key.S) || Input.IsKeyDown(Keyboard.Key.Down))
             {
                 _Direction = new Vector2f(0, 1);
-                _Mouse.CurrentFrame = 3;
+                _Mouse.CurrentFrame = 6;
             }
             else if (Input.IsKeyDown(Keyboard.Key.D) || Input.IsKeyDown(Keyboard.Key.Right))
             {
                 _Direction = new Vector2f(1, 0);
-                _Mouse.CurrentFrame = 2;
+                _Mouse.CurrentFrame = 4;
             }
             else _Direction = default;
         }

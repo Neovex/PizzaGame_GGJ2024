@@ -233,9 +233,17 @@
     <None Remove="Assets\KlappeIdle\0069.png" />
     <None Remove="Assets\KlappeIdle\0070.png" />
     <None Remove="Assets\m0.png" />
+    <None Remove="Assets\m1-Links.png" />
     <None Remove="Assets\m1.png" />
+    <None Remove="Assets\m2-ObenLinks.png" />
     <None Remove="Assets\m2.png" />
+    <None Remove="Assets\m3-ObenMitte.png" />
     <None Remove="Assets\m3.png" />
+    <None Remove="Assets\m4-ObenRechts.png" />
+    <None Remove="Assets\m5-Rechts.png" />
+    <None Remove="Assets\m6-UntenRechts.png" />
+    <None Remove="Assets\m7-Unten.png" />
+    <None Remove="Assets\m8-UntenLinks.png" />
     <None Remove="Assets\msc_ingame_loop.ogg" />
     <None Remove="Assets\msc_ingame_loop.wav" />
     <None Remove="Assets\msc_menu_loop.ogg" />
@@ -1084,16 +1092,28 @@
     <Content Include="Assets\KlappeIdle\0070.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m0.png">
+    <Content Include="Assets\m1-Links.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m1.png">
+    <Content Include="Assets\m2-ObenLinks.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m2.png">
+    <Content Include="Assets\m3-ObenMitte.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\m3.png">
+    <Content Include="Assets\m4-ObenRechts.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m5-Rechts.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m6-UntenRechts.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m7-Unten.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\m8-UntenLinks.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\msc_ingame_loop.wav">
