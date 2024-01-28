@@ -421,6 +421,9 @@ namespace PizzaGame
                         _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, 1.5f,
                         v => piece.Position = new Vector2f(v, piece.Position.Y), null, InterpolationType.InExpo);
 
+                        _Core.AnimationManager.Run(piece.Scale.X, .1f, 1.5f,
+                        v => piece.Scale = new Vector2f(v, v), null, InterpolationType.InExpo);
+
                         _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, 1.5f,
                         v => piece.Position = new Vector2f(piece.Position.X, v), 
                         ()=>
