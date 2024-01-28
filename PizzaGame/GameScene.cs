@@ -11,13 +11,14 @@ using BlackCoat.Entities.Shapes;
 using BlackCoat.Entities.Animation;
 using SFML.Audio;
 using BlackCoat.AssetHandling;
+using System.Reflection;
 
 namespace PizzaGame
 {
     internal class GameScene : Scene
     {
         private static readonly Vector2f _TileSize = new Vector2f(464, 217);
-        private Vector2f _AnimationTargetPos;
+        private readonly Vector2f _AnimationTargetPos = new Vector2f(885,378);
         private Vector2u _GridSize;
         private readonly Vector2f _I = new Vector2f(1, 0.5f);
         private readonly Vector2f _J = new Vector2f(-1, 0.5f);
@@ -80,9 +81,9 @@ namespace PizzaGame
             //Layer_Game.View = ViewTest;
 
             // Background
-            _AnimationTargetPos = _Core.DeviceSize * 0.25f; // fixme
             Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
 
+#if !DEBUG
             _RoboLoader = new TextureLoader("Assets\\Idle_Robo");
             _BGIdle = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _RoboLoader.Load(i.ToString("D4"))).ToArray())
             {
@@ -107,6 +108,7 @@ namespace PizzaGame
                 Visible = false
             };
             Layer_Background.Add(_BGLidOpen);
+#endif
 
 
             // Game Field
@@ -122,6 +124,20 @@ namespace PizzaGame
             _Mouse.Scale = new Vector2f(MapScale, MapScale) * .8f;
             Layer_Game.Add(_Mouse);
 
+            Input.KeyPressed += k =>
+            {
+                if (k != Keyboard.Key.Space) return;
+                foreach (var anim in Layer_Overlay.GetAll<FrameAnimation>())
+                {
+                    if (anim.Position.DistanceBetween(_DebugMarker.Position) < 40)
+                    {
+                        anim.Parent.Remove(anim);
+                        _SfxMan.Play("sfx_mouse_eat-00" + _Core.Random.Next(1, 4));
+                    }
+                }
+            };
+
+
             // Pickups
             _SalamiLoader = new TextureLoader("Assets\\Salami");
             _OlivLoader = new TextureLoader("Assets\\Olive");
@@ -129,11 +145,10 @@ namespace PizzaGame
 
             // Temp
             Input.KeyPressed += k => UpdateGrid();
-            //Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition - MapOffset));
+            Input.MouseButtonPressed += m => Trace.WriteLine(Input.MousePosition);
 
             _DebugMarker = new Rectangle(_Core, new Vector2f(5, 8), Color.Blue);
-            _DebugMarker.Position = _AnimationTargetPos;
-            Layer_Overlay.Add(_DebugMarker);
+            //Layer_Overlay.Add(_DebugMarker);
 
             //OpenInspector();
             return true;
@@ -143,7 +158,16 @@ namespace PizzaGame
         {
             //Input
             CheckInput();
-            _Mouse.Position = _Mouse.Position + _Direction * _Speed * deltaT;
+            _DebugMarker.Position = _Mouse.Position + _Direction * 75;
+            var pos  = _Mouse.Position + _Direction * _Speed * deltaT;
+            var index = PosToGrid(pos - MapOffset);
+            index = new(Math.Clamp(index.X, 0, (int)_GridSize.X - 1),
+                        Math.Clamp(index.Y, 0, (int)_GridSize.Y - 1));
+            var piece = _Grid[index.X, index.Y];
+            if (_GameField.CollidesWith(pos) && !piece.GoneFlying)
+            {
+                _Mouse.Position = pos;
+            }
 
             // Goodie Spawn
             _GoodieTime -= deltaT;
@@ -413,9 +437,9 @@ namespace PizzaGame
             _SalamiLoader.Dispose();
             _OlivLoader.Dispose();
             _TomatoLoader.Dispose();
-            _RoboLoader.Dispose();
-            _LidOpenLoader.Dispose();
-            _LidClosedLoader.Dispose();
+            _RoboLoader?.Dispose();
+            _LidOpenLoader?.Dispose();
+            _LidClosedLoader?.Dispose();
         }
     }
 }
