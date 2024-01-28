@@ -83,7 +83,7 @@ namespace PizzaGame
             // Background
             Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
 
-#if !DEBUG
+#if DEBUG
             _RoboLoader = new TextureLoader("Assets\\Idle_Robo");
             _BGIdle = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _RoboLoader.Load(i.ToString("D4"))).ToArray())
             {
@@ -101,7 +101,8 @@ namespace PizzaGame
             Layer_Background.Add(_BGLid);
 
             _LidOpenLoader = new TextureLoader("Assets\\KlappeAUF");
-            _BGLidOpen = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _LidOpenLoader.Load(i.ToString("D4"))).ToArray())
+            Texture[] openFrames = Enumerable.Range(0, 51).Select(i => _LidOpenLoader.Load(i.ToString("D4"))).ToArray();
+            _BGLidOpen = new FrameAnimation(_Core, 1f / 60, openFrames.Concat(openFrames.Reverse()).ToArray())
             {
                 Position = _BGIdle.Position,
                 Scale = _BGIdle.Scale,
@@ -173,7 +174,7 @@ namespace PizzaGame
 
             // Goodie Spawn
             _GoodieTime -= deltaT;
-            if (_GoodieTime < 0 && !_GoodyIsSpwaning)
+            if (_GoodieTime < 0 && !_GoodyIsSpwaning && !_Grid.Cast<PizzaPiece>().All(p => p.GoneFlying))
             {
                 _GoodieTime = _GoodieReset;
                 _GoodieReset *= 0.9f;
@@ -418,13 +419,23 @@ namespace PizzaGame
                     v => piece.Position = new Vector2f(piece.Position.X, v),
                     () =>
                     {
-                        _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, 1.5f,
+                        var time = 1;
+                        _Core.AnimationManager.Run(piece.Position.X, _AnimationTargetPos.X, time,
                         v => piece.Position = new Vector2f(v, piece.Position.Y), null, InterpolationType.InExpo);
 
-                        _Core.AnimationManager.Run(piece.Scale.X, .1f, 1.5f,
+                        _Core.AnimationManager.Run(piece.Scale.X, .1f, time,
                         v => piece.Scale = new Vector2f(v, v), null, InterpolationType.InExpo);
 
-                        _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, 1.5f,
+                        _BGIdle.CurrentFrame = _BGLid.CurrentFrame = _BGLidOpen.CurrentFrame = 0;
+                        _BGLid.Visible = false;
+                        _BGLidOpen.Visible = true;
+                        _Core.AnimationManager.Wait(2, () =>
+                        {
+                            _BGLid.Visible = true;
+                            _BGLidOpen.Visible = false;
+                        });
+
+                        _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, time,
                         v => piece.Position = new Vector2f(piece.Position.X, v), 
                         ()=>
                         {
