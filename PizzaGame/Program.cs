@@ -24,8 +24,8 @@ namespace PizzaGame
 #endif
 
 #if DEBUG
-            var vm = new VideoMode(1024, 768);
-            var device = Device.Create(vm, TITLE, Styles.Default, 0, false, 120);
+            var vm = new VideoMode(1920, 1080);
+            var device = Device.Create(vm, TITLE, Styles.Titlebar, 0, false, 120);
 #endif
             using (var core = new Core(device))
             {

@@ -36,7 +36,7 @@ namespace PizzaGame
 
         public float XMod { get; set; } = 0.5f;
         public float YMod { get; set; } = 1f;
-        public float MapScale { get; set; } = 0.45f;
+        public float MapScale { get; set; } = 0.7f;
         public Vector2f MapOffset { get; set; } = new Vector2f(150, 0);
 
         private Music _BgMusic;
@@ -66,7 +66,8 @@ namespace PizzaGame
 
 
             //ViewTest   
-            ViewTest = new View();
+            var defSize = new Vector2f(1920, 1080);
+            ViewTest = new View(defSize / 2, defSize);
             ViewTest.Size = _Core.DeviceSize;
             ViewTest.Center = _Core.DeviceSize / 2;
             //Layer_Background.View = ViewTest;
@@ -74,13 +75,8 @@ namespace PizzaGame
 
             // Background
             var part = 0.60f;
-            Layer_Background.Add(
-                new Rectangle(_Core, new Vector2f(_Core.DeviceSize.X, _Core.DeviceSize.Y * part), new Color(0xb05a1300))
-                { Position = new Vector2f(0, _Core.DeviceSize.Y * (1 - part)) });
-            Layer_Background.Add(
-                new Rectangle(_Core, new Vector2f(_Core.DeviceSize.X * 0.2f, _Core.DeviceSize.Y * (1 - part)), Color.Cyan)
-                { Position = new Vector2f(_Core.DeviceSize.X * 0.4f, 0) });
-            _AnimationTargetPos = Layer_Background.GetAll<Rectangle>().Last().Position;
+            Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
+            _AnimationTargetPos = _Core.DeviceSize / 2; // fixme
 
             // Game Field
             _GridSize = new Vector2u(3, 3);
@@ -101,7 +97,7 @@ namespace PizzaGame
             _TomatoLoader = new TextureLoader("Assets\\Tomate");
 
             // Temp
-            //Input.KeyPressed += k => UpdateGrid();
+            Input.KeyPressed += k => UpdateGrid();
             //Input.MouseButtonPressed += m => Trace.WriteLine(PosToGrid(Input.MousePosition - MapOffset));
 
             _DebugMarker = new Rectangle(_Core, new Vector2f(5, 8), Color.Blue);
@@ -220,11 +216,9 @@ namespace PizzaGame
             min = GridToPos(0, 0);
             max = GridToPos((int)_GridSize.X, (int)_GridSize.Y);
             var height = max.Y - min.Y;
-            _GridBounds = new FloatRect(_Core.DeviceSize.X / 2 - width / 2,
-                                        _Core.DeviceSize.Y * 0.75f - height / 2,
-                                        width, height);
-            MapOffset = new Vector2f(_Core.DeviceSize.X / 2 - _TileSize.X * MapScale / 2,
-                                     _Core.DeviceSize.Y * 0.75f - height / 2);
+            var yOff = _Core.DeviceSize.Y * 0.65f - height / 2;
+            _GridBounds = new FloatRect(_Core.DeviceSize.X / 2 - width / 2, yOff, width, height);
+            MapOffset = new Vector2f(_Core.DeviceSize.X / 2 - _TileSize.X * MapScale / 2, yOff);
 
             for (int x = 0; x < _GridSize.X; x++)
             {
