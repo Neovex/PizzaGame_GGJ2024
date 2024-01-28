@@ -109,8 +109,6 @@ namespace PizzaGame
             Layer_Background.Add(_BGLidOpen);
 
 
-
-
             // Game Field
             _GridSize = new Vector2u(3, 3);
             LoadGrid(Layer_Game);
@@ -367,7 +365,8 @@ namespace PizzaGame
                 {
                     _GoodyIsSpwaning = false;
                     goodie.Paused = false;
-                    if(!piece.GoneFlying) CheckForFlight(piece);
+                    _SfxMan.Play("sfx_food_impact");
+                    if (!piece.GoneFlying) CheckForFlight(piece);
                 });
         }
 
@@ -398,7 +397,11 @@ namespace PizzaGame
 
                         _Core.AnimationManager.Run(piece.Position.Y, _AnimationTargetPos.Y, 1.5f,
                         v => piece.Position = new Vector2f(piece.Position.X, v), 
-                        ()=> Layer_Game.Remove(piece),
+                        ()=>
+                        {
+                            Layer_Game.Remove(piece);
+                            _SfxMan.Play("sfx_food_hiss");
+                        },
                         InterpolationType.InExpo);
                     },
                     InterpolationType.OutElastic);
