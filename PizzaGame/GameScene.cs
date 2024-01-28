@@ -30,6 +30,12 @@ namespace PizzaGame
         private TextureLoader _SalamiLoader;
         private TextureLoader _OlivLoader;
         private TextureLoader _TomatoLoader;
+        private TextureLoader _RoboLoader;
+        private FrameAnimation _BGIdle;
+        private TextureLoader _LidClosedLoader;
+        private FrameAnimation _BGLid;
+        private TextureLoader _LidOpenLoader;
+        private FrameAnimation _BGLidOpen;
         private float _GoodieTime = 2, _GoodieReset = 2;
         private bool _GoodyIsSpwaning = false;
         private int _FlightCount = 5;
@@ -74,9 +80,36 @@ namespace PizzaGame
             //Layer_Game.View = ViewTest;
 
             // Background
-            var part = 0.60f;
+            _AnimationTargetPos = _Core.DeviceSize * 0.25f; // fixme
             Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
-            _AnimationTargetPos = _Core.DeviceSize / 2; // fixme
+
+            _RoboLoader = new TextureLoader("Assets\\Idle_Robo");
+            _BGIdle = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _RoboLoader.Load(i.ToString("D4"))).ToArray())
+            {
+                Position = new Vector2f(650, -50),
+                Scale = new Vector2f(0.9f, 0.9f)
+            };
+            Layer_Background.Add(_BGIdle);
+
+            _LidClosedLoader = new TextureLoader("Assets\\KlappeIdle");
+            _BGLid = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _LidClosedLoader.Load(i.ToString("D4"))).ToArray())
+            {
+                Position = _BGIdle.Position,
+                Scale = _BGIdle.Scale
+            };
+            Layer_Background.Add(_BGLid);
+
+            _LidOpenLoader = new TextureLoader("Assets\\KlappeAUF");
+            _BGLidOpen = new FrameAnimation(_Core, 1f / 60, Enumerable.Range(0, 51).Select(i => _LidOpenLoader.Load(i.ToString("D4"))).ToArray())
+            {
+                Position = _BGIdle.Position,
+                Scale = _BGIdle.Scale,
+                Visible = false
+            };
+            Layer_Background.Add(_BGLidOpen);
+
+
+
 
             // Game Field
             _GridSize = new Vector2u(3, 3);
@@ -372,6 +405,14 @@ namespace PizzaGame
             }
         }
 
-        protected override void Destroy() { }
+        protected override void Destroy()
+        {
+            _SalamiLoader.Dispose();
+            _OlivLoader.Dispose();
+            _TomatoLoader.Dispose();
+            _RoboLoader.Dispose();
+            _LidOpenLoader.Dispose();
+            _LidClosedLoader.Dispose();
+        }
     }
 }
