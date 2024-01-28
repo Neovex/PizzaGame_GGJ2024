@@ -90,6 +90,7 @@
     <None Remove="Assets\Idle_Robo\0068.png" />
     <None Remove="Assets\Idle_Robo\0069.png" />
     <None Remove="Assets\Idle_Robo\0070.png" />
+    <None Remove="Assets\ingame_loop.ogg" />
     <None Remove="Assets\KlappeAUF\0000.png" />
     <None Remove="Assets\KlappeAUF\0001.png" />
     <None Remove="Assets\KlappeAUF\0002.png" />
@@ -716,10 +717,9 @@
     <None Remove="Assets\Maus\8-UntenLinks\0057.png" />
     <None Remove="Assets\Maus\8-UntenLinks\0058.png" />
     <None Remove="Assets\Maus\8-UntenLinks\0059.png" />
+    <None Remove="Assets\menu_loop.ogg" />
     <None Remove="Assets\msc_ingame_loop.ogg" />
-    <None Remove="Assets\msc_ingame_loop.wav" />
     <None Remove="Assets\msc_menu_loop.ogg" />
-    <None Remove="Assets\msc_menu_loop.wav" />
     <None Remove="Assets\Olive\0000.png" />
     <None Remove="Assets\Olive\0001.png" />
     <None Remove="Assets\Olive\0002.png" />
@@ -1136,6 +1136,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Idle_Robo\0070.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ingame_loop.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\KlappeAUF\0000.png">
@@ -3004,10 +3007,7 @@
     <Content Include="Assets\Maus\8-UntenLinks\0059.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\msc_ingame_loop.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\msc_menu_loop.wav">
+    <Content Include="Assets\menu_loop.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Salami\0040.png">

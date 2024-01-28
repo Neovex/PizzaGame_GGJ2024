@@ -20,7 +20,7 @@ namespace PizzaGame
 
         protected override bool Load()
         {
-            _Music = MusicLoader.Load("msc_menu_loop");
+            _Music = MusicLoader.Load("menu_loop");
             _Music.Loop = true;
 #if !DEBUG
             _Music.Play();
