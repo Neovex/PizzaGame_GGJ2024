@@ -18,6 +18,7 @@
     <None Remove="Assets\6.png" />
     <None Remove="Assets\7.png" />
     <None Remove="Assets\8.png" />
+    <None Remove="Assets\Banner.png" />
     <None Remove="Assets\BG.png" />
     <None Remove="Assets\Idle_Robo\0000.png" />
     <None Remove="Assets\Idle_Robo\0001.png" />
@@ -920,6 +921,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Banner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\BG.png">
