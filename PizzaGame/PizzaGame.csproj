@@ -3513,7 +3513,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\GGJ Source\BlackCoat\src\BlackCoat.csproj" />
+    <Reference Include="BlackCoat">
+      <HintPath>lib\BlackCoat.dll</HintPath>
+    </Reference>
+    <Reference Include="TinyTools">
+      <HintPath>lib\TinyTools.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

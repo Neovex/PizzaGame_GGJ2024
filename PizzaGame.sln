@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaGame", "PizzaGame\PizzaGame.csproj", "{FC4A2136-2E23-4A71-BB70-AA5F4CB2397D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackCoat", "..\GGJ Source\BlackCoat\src\BlackCoat.csproj", "{704BA7C2-3348-41F9-A29B-191B5BED8E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaGame", "PizzaGame\PizzaGame.csproj", "{FC4A2136-2E23-4A71-BB70-AA5F4CB2397D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{FC4A2136-2E23-4A71-BB70-AA5F4CB2397D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC4A2136-2E23-4A71-BB70-AA5F4CB2397D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC4A2136-2E23-4A71-BB70-AA5F4CB2397D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{704BA7C2-3348-41F9-A29B-191B5BED8E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{704BA7C2-3348-41F9-A29B-191B5BED8E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{704BA7C2-3348-41F9-A29B-191B5BED8E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{704BA7C2-3348-41F9-A29B-191B5BED8E0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
