@@ -22,6 +22,7 @@ namespace PizzaGame
         {
             _Music = MusicLoader.Load("menu_loop");
             _Music.Loop = true;
+            _Music.Volume = Program.MUSIC_VOLUME;
 #if !DEBUG
             _Music.Play();
 #endif
@@ -40,6 +41,7 @@ namespace PizzaGame
             _ExitCol = new Rectangle(_Core, new(200, 80), Color.Cyan) { Position = new(1150, 675) };
 
             var sfx = new Sound(SfxLoader.Load("sfx_button_forward"));
+            sfx.Volume = Program.SFX_VOLUME;
             Input.MouseButtonPressed += m =>
             {
                 if (_StartCol.CollidesWith(Input.MousePosition))
