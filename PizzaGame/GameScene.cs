@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Linq;
-using System.Diagnostics;
+using System.Collections.Generic;
 using SFML.System;
 using SFML.Window;
 using SFML.Graphics;
+using SFML.Audio;
 using BlackCoat;
 using BlackCoat.Entities;
 using BlackCoat.Animation;
 using BlackCoat.Entities.Shapes;
 using BlackCoat.Entities.Animation;
-using SFML.Audio;
 using BlackCoat.AssetHandling;
-using System.Reflection;
-using System.Collections.Generic;
 
 namespace PizzaGame
 {
@@ -68,20 +66,9 @@ namespace PizzaGame
 #if !DEBUG
             _BgMusic.Play();
 #endif
-
             // SFX
             _SfxMan = new SfxManager(SfxLoader, () => Program.SFX_VOLUME);
             foreach (var sfxFile in _SfxFiles) _SfxMan.AddToLibrary(sfxFile, 2);
-            //_Core.AnimationManager.Wait(4, () => _SfxMan.Play(_SfxFiles[3]));
-
-
-            //ViewTest   
-            var defSize = new Vector2f(1920, 1080);
-            ViewTest = new View(defSize / 2, defSize);
-            ViewTest.Size = _Core.DeviceSize;
-            ViewTest.Center = _Core.DeviceSize / 2;
-            //Layer_Background.View = ViewTest;
-            //Layer_Game.View = ViewTest;
 
             // Background
             Layer_Background.Add(new Graphic(_Core, TextureLoader.Load("BG")));
@@ -158,14 +145,7 @@ namespace PizzaGame
             _OlivLoader = new TextureLoader("Assets\\Olive");
             _TomatoLoader = new TextureLoader("Assets\\Tomate");
 
-            // Temp
-            Input.KeyPressed += k => UpdateGrid();
-            Input.MouseButtonPressed += m => Trace.WriteLine(Input.MousePosition);
-
             _DebugMarker = new Rectangle(_Core, new Vector2f(5, 8), Color.Blue);
-            //Layer_Overlay.Add(_DebugMarker);
-
-            //OpenInspector();
             return true;
         }
 
@@ -496,6 +476,13 @@ namespace PizzaGame
             _RoboLoader?.Dispose();
             _LidOpenLoader?.Dispose();
             _LidClosedLoader?.Dispose();
+            if(_Loaders != null)
+            {
+                foreach (var loader in _Loaders)
+                {
+                    loader?.Dispose();
+                }
+            }
         }
     }
 }
