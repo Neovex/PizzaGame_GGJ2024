@@ -14,7 +14,7 @@ namespace PizzaGame
 #if !DEBUG
             var launcher = new Launcher()
             {
-                //BannerImage = Image.FromFile("Assets\\Banner_V2.png"),
+                BannerImage = System.Drawing.Image.FromFile("Assets\\Banner.png"),
                 Text = TITLE
             };
             var device = Device.Create(launcher, TITLE);
