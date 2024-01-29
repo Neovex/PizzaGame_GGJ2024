@@ -13,6 +13,7 @@ namespace PizzaGame
         private Rectangle _StartCol;
         private Rectangle _ExitCol;
         private Music _Music;
+        private MusicLoader _MLoader;
 
         public MenueScene(Core core) : base(core, "Menue", "Assets")
         { }
@@ -20,7 +21,8 @@ namespace PizzaGame
 
         protected override bool Load()
         {
-            _Music = MusicLoader.Load("menu_loop");
+            _MLoader = new MusicLoader(MusicLoader.RootFolder);
+            _Music = _MLoader.Load("menu_loop");
             _Music.Loop = true;
             _Music.Volume = Program.MUSIC_VOLUME;
 #if !DEBUG
@@ -31,7 +33,7 @@ namespace PizzaGame
 
             var fnt = FontLoader.Load("Super Dream");
 
-            _Start = new TextItem(_Core, "Start", 25, fnt) { Position = new(560, 650), CharacterSize=100, Color = Color.Yellow };
+            _Start = new TextItem(_Core, "Start", 25, fnt) { Position = new(620, 650), CharacterSize=100, Color = Color.Yellow };
             _Exit = new TextItem(_Core, "Exit", 25, fnt) { Position = new(1150, 650), CharacterSize = 100, Color = Color.Yellow };
             Layer_Game.Add(_Start);
             Layer_Game.Add(_Exit);
@@ -47,7 +49,7 @@ namespace PizzaGame
                 if (_StartCol.CollidesWith(Input.MousePosition))
                 {
                     sfx.Play();
-                    _Core.SceneManager.ChangeScene(new GameScene(_Core));
+                    _Core.SceneManager.ChangeScene(new LoadingScene(_Core, _MLoader, _Music));
                 }
                 if (_ExitCol.CollidesWith(Input.MousePosition))
                 {
