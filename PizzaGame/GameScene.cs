@@ -59,13 +59,6 @@ namespace PizzaGame
 
         protected override bool Load()
         {
-            // Music
-            _BgMusic = MusicLoader.Load("ingame_loop");
-            _BgMusic.Volume = Program.MUSIC_VOLUME;
-            _BgMusic.Loop = true;
-#if !DEBUG
-            _BgMusic.Play();
-#endif
             // SFX
             _SfxMan = new SfxManager(SfxLoader, () => Program.SFX_VOLUME);
             foreach (var sfxFile in _SfxFiles) _SfxMan.AddToLibrary(sfxFile, 2);
@@ -146,6 +139,14 @@ namespace PizzaGame
             _TomatoLoader = new TextureLoader("Assets\\Tomate");
 
             _DebugMarker = new Rectangle(_Core, new Vector2f(5, 8), Color.Blue);
+
+            // Music
+            _BgMusic = MusicLoader.Load("ingame_loop");
+            _BgMusic.Volume = Program.MUSIC_VOLUME;
+            _BgMusic.Loop = true;
+#if !DEBUG
+            _BgMusic.Play();
+#endif
             return true;
         }
 
